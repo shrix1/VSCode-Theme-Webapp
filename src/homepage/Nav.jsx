@@ -1,5 +1,6 @@
 import React from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
+import { BsDownload } from "react-icons/bs";
 
 export default function Nav() {
   const openDropdown = () => {
@@ -64,11 +65,13 @@ export default function Nav() {
 
           {/* --------------------download btn---------------------------- */}
           <button
-            className="p-2 bg-mainpp-200 rounded-md mt-3 w-[140px] ml-[170px]
+            className="p-2 bg-mainpp-200 rounded-md mt-3 w-[140px] ml-[160px] 
         border-mainpp-200 hover:bg-transparent border-2 hover:border-mainpp-200
         hover:text-white transition-colors duration-300"
           >
-            <a href="/">Download</a>
+            <a href="/">
+              Download <BsDownload className="inline ml-3 -mt-[2px]" />
+            </a>
           </button>
         </div>
       </nav>
