@@ -8,13 +8,22 @@ export default function Nav() {
   };
   return (
     <>
-      <nav className="w-[100%] p-5 md:h-[8vh] bg-mainbl-200 font-pop md:flex md:justify-around md:items-center">
+      {/*---------------------nav -----------------------------------*/}
+      <nav
+        className="w-[100%] p-5 md:h-[8vh] bg-mainbl-200 font-pop 
+      md:flex md:justify-around md:items-center"
+      >
         {/* logo/dropdown */}
         <div className="flex justify-between">
-          <div>
-            <h1 className="text-3xl text-white">Theme</h1>
-          </div>
+          {/* --------------name of ours-------------------------------*/}
+          <h1
+            className="text-3xl text-white hover:text-mainpp-200 
+            transition-colors duration-150"
+          >
+            Theme
+          </h1>
 
+          {/* ------------button for dropdown --------------------*/}
           <button
             onClick={openDropdown}
             className="text-3xl text-white hover:text-mainpp-200 md:hidden"
@@ -23,13 +32,17 @@ export default function Nav() {
           </button>
         </div>
 
-        {/* list */}
+        {/* list  and btn*/}
         <div
           className="flex-col hidden md:z-0 z-[-1] transition-all duration-1000 ease-out
-          md:flex md:justify-between md:flex-row md:items-center"
+          md:flex md:justify-between md:flex-row md:items-center  border-white"
           id="dropdown"
         >
-          <ul className="text-1xl mt-2 flex justify-around md:flex md:justify-around md:items-center">
+          {/* ---------------------list ---------------------------*/}
+          <ul
+            className="text-1xl mt-2 flex justify-around md:flex md:justify-around 
+          md:items-center md:gap-[50px]"
+          >
             <li>
               <a href="/" className="text-mainbl-100 hover:text-white">
                 Reviews
@@ -49,6 +62,7 @@ export default function Nav() {
             </li>
           </ul>
 
+          {/* --------------------download btn---------------------------- */}
           <button
             className="p-2 bg-mainpp-200 rounded-md mt-3 w-[140px] ml-[170px]
         border-mainpp-200 hover:bg-transparent border-2 hover:border-mainpp-200
