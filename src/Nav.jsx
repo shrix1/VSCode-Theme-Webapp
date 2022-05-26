@@ -8,7 +8,8 @@ export default function Nav() {
   };
   return (
     <>
-      <nav className="w-[100%] p-5 bg-mainbl-200 font-pop">
+      <nav className="w-[100%] p-5 md:h-[8vh] bg-mainbl-200 font-pop md:flex md:justify-around md:items-center">
+        {/* logo/dropdown */}
         <div className="flex justify-between">
           <div>
             <h1 className="text-3xl text-white">Theme</h1>
@@ -16,17 +17,19 @@ export default function Nav() {
 
           <button
             onClick={openDropdown}
-            className="text-3xl text-white hover:text-mainpp-200"
+            className="text-3xl text-white hover:text-mainpp-200 md:hidden"
           >
             <HiMenuAlt3 />
           </button>
         </div>
 
+        {/* list */}
         <div
-          className="flex-col hidden z-[-1] transition-all duration-1000 ease-out"
+          className="flex-col hidden md:z-0 z-[-1] transition-all duration-1000 ease-out
+          md:flex md:justify-between md:flex-row md:items-center"
           id="dropdown"
         >
-          <ul className="text-1xl mt-2 flex justify-around ">
+          <ul className="text-1xl mt-2 flex justify-around md:flex md:justify-around md:items-center">
             <li>
               <a href="/" className="text-mainbl-100 hover:text-white">
                 Reviews
