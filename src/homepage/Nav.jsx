@@ -35,7 +35,7 @@ export default function Nav() {
         {/* list  and btn*/}
         <div
           className="flex-col hidden md:z-0 z-[-1] transition-all duration-1000 ease-out
-          md:flex md:justify-between md:flex-row md:items-center  border-white"
+          md:flex md:justify-between md:flex-row md:items-center border-white md:mt-[-10px]"
           id="dropdown"
         >
           {/* ---------------------list ---------------------------*/}
