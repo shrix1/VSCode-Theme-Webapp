@@ -2,6 +2,10 @@ import React from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 
 export default function Nav() {
+  const openDropdown = () => {
+    const dropdown = document.getElementById("dropdown");
+    dropdown.classList.toggle("hidden");
+  };
   return (
     <>
       <nav className="w-[100%] p-5 bg-mainbl-200 font-pop">
@@ -10,13 +14,19 @@ export default function Nav() {
             <h1 className="text-3xl text-white">Theme</h1>
           </div>
 
-          <button className="text-3xl text-white hover:text-mainpp-200">
+          <button
+            onClick={openDropdown}
+            className="text-3xl text-white hover:text-mainpp-200"
+          >
             <HiMenuAlt3 />
           </button>
         </div>
 
-        <div className="flex flex-col">
-          <ul className="text-1xl mt-2 flex justify-around relative">
+        <div
+          className="flex-col hidden z-[-1] transition-all duration-1000 ease-out"
+          id="dropdown"
+        >
+          <ul className="text-1xl mt-2 flex justify-around ">
             <li>
               <a href="/" className="text-mainbl-100 hover:text-white">
                 Reviews
