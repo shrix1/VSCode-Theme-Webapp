@@ -45,19 +45,19 @@ export default function Nav() {
           md:items-center md:gap-[50px]"
           >
             <li>
-              <a href="/" className="text-mainbl-100 hover:text-white">
+              <a href="/" className=" text-mainbl-50 hover:text-white">
                 Reviews
               </a>
             </li>
             <span className="text-mainbl-100">.</span>
             <li>
-              <a href="/" className="text-mainbl-100 hover:text-white">
+              <a href="/" className="text-mainbl-50 hover:text-white">
                 Contact
               </a>
             </li>
             <span className="text-mainbl-100">.</span>
             <li>
-              <a href="/" className="text-mainbl-100 hover:text-white">
+              <a href="/" className="text-mainbl-50 hover:text-white">
                 Support
               </a>
             </li>
