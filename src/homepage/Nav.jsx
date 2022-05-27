@@ -49,13 +49,13 @@ export default function Nav() {
                 Reviews
               </a>
             </li>
-            <span className="text-mainbl-100">.</span>
+            <span className="text-mainbl-50">.</span>
             <li>
               <a href="/" className="text-mainbl-50 hover:text-white">
                 Contact
               </a>
             </li>
-            <span className="text-mainbl-100">.</span>
+            <span className="text-mainbl-50">.</span>
             <li>
               <a href="/" className="text-mainbl-50 hover:text-white">
                 Support
