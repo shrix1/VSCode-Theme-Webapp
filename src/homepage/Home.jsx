@@ -5,8 +5,7 @@ export default function Home() {
     <>
       <div className="text-center text-4xl text-mainpp-200">
         <h1>
-          tailwind is mobile first design da kiran so whatever u do .do mobile
-          design first
+          ooooo
         </h1>
       </div>
     </>
