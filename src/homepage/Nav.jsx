@@ -27,7 +27,7 @@ export default function Nav() {
           {/* ------------button for dropdown --------------------*/}
           <button
             onClick={openDropdown}
-            className="text-3xl text-white hover:text-mainpp-200 md:hidden"
+            className="text-3xl text-mainpp-200 hover:text-white md:hidden"
           >
             <HiMenuAlt3 />
           </button>
