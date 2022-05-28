@@ -20,7 +20,7 @@ export default function Home() {
               title="download"
               className=" w-60 h-20 bg-mainbl-50 rounded-md 
             before:absolute before:-translate-x-9 before:-translate-y-4
-            before:border-mainpp-200  before:w-60 before:h-20 
+            before:border-mainpp-200 before:w-60 before:h-20 
             before:z-[0] before:rounded-md before:border-[3px] 
             hover:before:border-[3.5px] hover:before:-translate-x-[45px] 
             hover:before:-translate-y-[9px] transition-transform 
