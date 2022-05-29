@@ -23,8 +23,9 @@ export default function Home() {
             before:border-mainpp-200 before:w-60 before:h-20 
             before:z-[0] before:rounded-md before:border-[3px] 
             hover:before:border-[3.5px] hover:before:-translate-x-[45px] 
-            hover:before:-translate-y-[9px] transition-transform 
-            duration-1000 ml-[4.4rem] md:w-[300px] md:h-[105px] 
+            hover:before:-translate-y-[9px] before:transition-transform 
+            before:duration-500 hover:bg-transparent transition-color ease-in
+            duration-500 before:ease-in-out ml-[4.4rem] md:w-[300px] md:h-[105px] 
             md:before:w-[300px] md:before:h-[105px] md:before:-translate-x-[60px]
             md:before:-translate-y-[30px] md:hover:before:-translate-x-[49px]
             md:hover:before:-translate-y-[20px] md:hover:before:border-4 
