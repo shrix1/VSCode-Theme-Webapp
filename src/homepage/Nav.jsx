@@ -36,8 +36,9 @@ export default function Nav() {
 
         {/* list  and btn*/}
         <div
-          className="flex-col hidden md:z-0 z-[-1] transition-all duration-1000 ease-out
-          md:flex md:justify-between md:flex-row md:items-center border-white md:mt-[-10px]"
+          className="flex-col hidden   md:z-0 z-[-1] duration-1000 ease-out
+          md:flex md:justify-between md:flex-row md:items-center border-white 
+          md:mt-[-10px] transition-transform"
           id="dropdown"
         >
           {/* ---------------------list ---------------------------*/}
@@ -66,7 +67,7 @@ export default function Nav() {
 
           {/* --------------------download btn---------------------------- */}
           <button
-            className="p-2 bg-mainpp-200 rounded-md mt-3 w-[140px] ml-[160px] 
+            className="p-2 bg-mainpp-200 rounded-md mt-3 w-[140px] ml-[120px] 
         border-mainpp-200 hover:bg-transparent border-2 hover:border-mainpp-200
         hover:text-white transition-colors duration-300"
           >

@@ -6,11 +6,11 @@ export default function Home() {
     <>
       <main>
         <section
-          className="bg-mainbl-200 h-[80vh] flex md:h-[80vh] overflow-hidden
+          className=" bg-mainbl-200 h-[80vh] flex md:h-[80vh] overflow-hidden
         justify-around items-center flex-col font-pop md:flex-row"
         >
           {/*------------------- image ----------------------*/}
-          <div className="w-[390px] -mt-[150px] md:w-[1000px]">
+          <div className="w-[350px] -mt-[150px] md:w-[1000px]">
             <img src={image} alt="themephoto" title="theme" />
           </div>
 
