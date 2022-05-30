@@ -10,7 +10,7 @@ export default function Home() {
         justify-around items-center flex-col font-pop md:flex-row"
         >
           {/*------------------- image ----------------------*/}
-          <div className="w-[460px] -mt-[150px] md:w-[1000px]">
+          <div className="w-[390px] -mt-[150px] md:w-[1000px]">
             <img src={image} alt="themephoto" title="theme" />
           </div>
 
@@ -18,18 +18,18 @@ export default function Home() {
           <div className="-mt-[250px] md:-ml-[190px]">
             <button
               title="download"
-              className=" w-60 h-20 bg-mainbl-50 rounded-md 
-            before:absolute before:-translate-x-9 before:-translate-y-4
-            before:border-mainpp-200 before:w-60 before:h-20 
+              className=" w-[220px] h-20 bg-mainbl-50 rounded-md 
+            before:absolute before:-translate-x-7 before:-translate-y-4
+            before:border-mainpp-200 before:w-[220px] before:h-20 
             before:z-[0] before:rounded-md before:border-[3px] 
-            hover:before:border-[3.5px] hover:before:-translate-x-[45px] 
+            hover:before:border-[3.5px] hover:before:-translate-x-[37px] 
             hover:before:-translate-y-[9px] before:transition-transform 
             before:duration-500 hover:bg-transparent transition-color ease-in
-            duration-500 before:ease-in-out ml-[4.4rem] md:w-[300px] md:h-[105px] 
+            duration-500 before:ease-in-out ml-[5rem] md:w-[300px] md:h-[105px] 
             md:before:w-[300px] md:before:h-[105px] md:before:-translate-x-[60px]
             md:before:-translate-y-[30px] md:hover:before:-translate-x-[49px]
             md:hover:before:-translate-y-[20px] md:hover:before:border-4 
-            md:border-[3px]"
+            md:border-[3px] md:ml-12"
             >
               {/* ----add link here------- */}
               <a href="/">
@@ -48,17 +48,17 @@ export default function Home() {
               className="flex justify-center items-center mt-[15px] 
               flex-col w-[400px] h-[20vh] -mb-[100px] gap-2 md:w-[420px]"
             >
-              <h1 className="text-4xl text-mainbl-50 md:text-[41px]" title="#1">
+              <h1 className="text-3xl text-mainbl-50 md:text-[41px]" title="#1">
                 Best <span className="text-mainpp-200">VSCODE</span> theme
               </h1>
               <h1
-                className="text-mainbl-50 text-[25px] md:text-[30px]"
+                className="text-mainbl-50 text-[20px] md:text-[30px]"
                 title="100 downloads"
               >
-                downloads :<span className="text-mainpp-200 ">100+</span>
+                downloads : <span className="text-mainpp-200 ">100+</span>
               </h1>
               <h1
-                className="text-mainbl-50 text-[25px] md:text-[26px]"
+                className="text-mainbl-50 text-[20px] md:text-[26px]"
                 title="positive"
               >
                 reviews : <span className="text-mainpp-200">positive</span>
