@@ -11,7 +11,7 @@ export default function Nav() {
     <>
       {/*---------------------nav -----------------------------------*/}
       <nav
-        className="w-[100%] p-5 md:h-[8vh] bg-mainbl-200 font-pop 
+        className="w-[100%] p-5 md:h-[7vh] bg-mainbl-200 font-pop 
       md:flex md:justify-around md:items-center"
       >
         {/* logo/dropdown */}
