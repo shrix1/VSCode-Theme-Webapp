@@ -6,12 +6,12 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
 
-import { shri } from "../images/shri.jpg";
-import { kiran } from "../images/kiran.jpg";
-import { purusoth } from "../images/purusoth.jpg";
-import { jaya } from "../images/jaya.jpg";
+import shri from "../images/shri.jpg";
+import kiran from "../images/kiran.jpg";
+import purusoth from "../images/purusoth.jpg";
+import jaya from "../images/jaya.jpg";
 
-const copy = () => {
+const Team = () => {
   return (
     <>
       <h1 className="heading">Fellows</h1>
@@ -173,4 +173,4 @@ const copy = () => {
   );
 };
 
-export default copy;
+export default Team;
