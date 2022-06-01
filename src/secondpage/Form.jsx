@@ -1,8 +1,4 @@
 import React, { useState } from 'react'
-// import { database } from './firebase'
-
-// import { MdContacts } from 'react-icons/md';
-
 
 const Form = () => {
 
