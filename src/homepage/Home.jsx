@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <main>
         <section
-          className=" bg-gradient-to-b from-mainbl-200 md:via-mainbl-200 
+          className="bg-mainbl-200 md:via-mainbl-200 
           to-mainpp-200 w-[100%] h-[80vh] flex md:h-[80vh] overflow-hidden
         justify-around items-center flex-col font-pop md:flex-row "
         >
@@ -51,7 +51,7 @@ export default function Home() {
             >
               <h1 className="text-3xl text-white md:text-[41px]" title="#1">
                 Best{" "}
-                <span className="text-mainbl-200 md:text-mainpp-200">
+                <span className="text-mainpp-200 md:text-mainpp-200">
                   VSCODE
                 </span>{" "}
                 theme
@@ -61,7 +61,7 @@ export default function Home() {
                 title="100 downloads"
               >
                 downloads :{" "}
-                <span className="text-mainbl-200 md:text-mainpp-200 ">
+                <span className="text-mainpp-200 md:text-mainpp-200 ">
                   100+
                 </span>
               </h1>
@@ -70,7 +70,7 @@ export default function Home() {
                 title="positive"
               >
                 reviews :{" "}
-                <span className="text-mainbl-200 md:text-mainpp-200">
+                <span className="text-mainpp-200 md:text-mainpp-200">
                   positive
                 </span>
               </h1>
