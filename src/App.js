@@ -1,9 +1,9 @@
-import "./App.css";
+// import "./App.css";
 import Nav from "./homepage/Nav";
 import Home from "./homepage/Home";
 import Howto from "./homepage/Howto";
-import Form from "./secondpage/Form";
-import Team from "./secondpage/Team";
+// import Form from "./secondpage/Form";
+// import Team from "./secondpage/Team";
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <Nav />
       <Home />
       <Howto />
-      <Form />
-      <Team />
+      {/* <Form />
+      <Team /> */}
     </>
   );
 }
