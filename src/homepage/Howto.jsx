@@ -21,7 +21,7 @@ const Howto = () => {
               <h1 className="text-xl md:text-3xl text-mainpp-200 tracking-[0.7px] md:mb-1">
                 From VSCODE code editor :
               </h1>
-              <h2 className="text-mainbl-50 ">
+              <h1 className="text-mainbl-50 ">
                 go to the extension tab <br />
                 <span className="text-mainpp-200 font-bold ml-5">
                   {">>>"}
@@ -32,7 +32,7 @@ const Howto = () => {
                   {">>>"}
                 </span>{" "}
                 Download it .
-              </h2>
+              </h1>
             </div>
             <br />
             {/*------------------------- or------------------------------------- */}
