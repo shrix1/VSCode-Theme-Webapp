@@ -2,8 +2,8 @@ const Howto = () => {
   return (
     <>
       <main
-        className="flex flex-col  h-[43vh] justify-evenly p-4 items-center font-pop capitalize
-       bg-mainbl-200"
+        className="flex flex-col  h-[43vh] justify-evenly p-4 items-center 
+        font-pop capitalize bg-mainbl-200"
       >
         <h1
           className="text-3xl md:text-6xl text-white font-medium
