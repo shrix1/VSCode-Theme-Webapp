@@ -3,6 +3,7 @@ import Nav from "./homepage/Nav";
 import Home from "./homepage/Home";
 import Howto from "./homepage/Howto";
 import Form from "./secondpage/Form";
+import Team from "./secondpage/Team";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Home />
       <Howto />
       <Form />
+      <Team />
     </>
   );
 }
