@@ -14,7 +14,7 @@ const Howto = () => {
         <div className="md:text-3xl">
           <div className="md:flex md:justify-between md:items-center">
             <div className="md:w-[500px] md:mr-5">
-              <h1 className="text-xl md:text-3xl text-white tracking-[0.7px] md:mb-1">
+              <h1 className="text-xl md:text-3xl text-mainpp-200 tracking-[0.7px] md:mb-1">
                 From VSCODE code editor :
               </h1>
               <h2 className="text-mainbl-50 ">
@@ -33,7 +33,7 @@ const Howto = () => {
             <br />
             <h1 className="text-center text-mainpp-200">(or)</h1>
             <div className="md:w-[500px] md:ml-10">
-              <h1 className="text-xl  md:text-3xl text-white tracking-[1px] md:mb-1">
+              <h1 className="text-xl  md:text-3xl text-mainpp-200  tracking-[1px] md:mb-1">
                 Manual download :
               </h1>
               <span className="text-mainbl-50">
