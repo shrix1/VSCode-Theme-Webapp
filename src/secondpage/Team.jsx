@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { AiOutlineGithub } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillInstagram } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
 
 import shri from "../images/shri.jpg";
