@@ -1,10 +1,6 @@
-// import React, { useState } from "react";
+import React from "react";
 
 const Form = () => {
-  // const[name, setName] = useState("");
-  // const[email, setEmail] = useState("");
-  // const[message, setMessage] = useState("");
-
   return (
     <>
       <section id="contact" className="bg-mainbl-200 min-h-[70vh] relative">

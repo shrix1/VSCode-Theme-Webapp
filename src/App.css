@@ -28,7 +28,7 @@
   width: 300px;
   height: 400px;
   transform: translate(-50%, -50%);
-  border-radius: 16px;
+  border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
   cursor: pointer;
@@ -93,9 +93,9 @@
   height: 50px;
   line-height: 50px;
   text-align: center;
-  background: #fff;
+  background: rgba(203, 88, 238, 0.664);
   font-size: 23px;
-  color: #333;
+  color: rgb(3, 3, 3);
   font-weight: bold;
   padding: 10px 10px;
   box-sizing: border-box;

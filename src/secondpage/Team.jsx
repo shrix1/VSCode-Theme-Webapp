@@ -19,39 +19,6 @@ const Team = () => {
         <div className="card-wrapper">
           <div className="card profile-two">
             <div className="card-image profile-img--two">
-              <img src={purusoth} className="purusoth" alt="profile two" />
-            </div>
-
-            <ul className="social-icons">
-              <li className="lists">
-                <a className="icons" href="/">
-                  <AiOutlineGithub className="hover:text-mainpp-100" />
-                </a>
-              </li>
-              <li className="lists">
-                <a className="icons" href="/">
-                  <AiFillLinkedin />
-                </a>
-              </li>
-              <li className="lists">
-                <a className="icons" href="/">
-                  <BsLink45Deg />
-                </a>
-              </li>
-            </ul>
-
-            <div className="details users">
-              <h2>
-                pursusoth
-                <br />
-                {/* <span className="job-title">UI Designer</span> */}
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div className="card-wrapper">
-          <div className="card profile-two">
-            <div className="card-image profile-img--two">
               <img src={shri} className="shri" alt="profile two" />
             </div>
 
@@ -110,6 +77,39 @@ const Team = () => {
             <div className="details users">
               <h2>
                 kiran kumar
+                <br />
+                {/* <span className="job-title">UI Designer</span> */}
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div className="card-wrapper">
+          <div className="card profile-two">
+            <div className="card-image profile-img--two">
+              <img src={purusoth} className="purusoth" alt="profile two" />
+            </div>
+
+            <ul className="social-icons">
+              <li className="lists">
+                <a className="icons" href="/">
+                  <AiOutlineGithub className="hover:text-mainpp-100" />
+                </a>
+              </li>
+              <li className="lists">
+                <a className="icons" href="/">
+                  <AiFillLinkedin />
+                </a>
+              </li>
+              <li className="lists">
+                <a className="icons" href="/">
+                  <BsLink45Deg />
+                </a>
+              </li>
+            </ul>
+
+            <div className="details users">
+              <h2>
+                pursusoth
                 <br />
                 {/* <span className="job-title">UI Designer</span> */}
               </h2>
