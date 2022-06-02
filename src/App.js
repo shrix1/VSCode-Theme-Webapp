@@ -1,11 +1,11 @@
-// import "./App.css";
+import "./App.css";
 import Nav from "./homepage/Nav";
 import Home from "./homepage/Home";
 import Howto from "./homepage/Howto";
 import Form from "./secondpage/Form";
 import Team from "./secondpage/Team";
 
-function App() {
+const App = () => {
   return (
     <>
       <Nav />
@@ -15,6 +15,6 @@ function App() {
       <Team />
     </>
   );
-}
+};
 
 export default App;

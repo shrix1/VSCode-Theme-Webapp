@@ -38,8 +38,8 @@ const Howto = () => {
             {/*------------------------- or------------------------------------- */}
             <h1 className="text-center text-mainpp-200">(or)</h1>
             {/*--------------------- manual dload div--------------------------------*/}
-            <div className="md:w-[500px] md:ml-10">
-              <h1 className="text-xl md:text-3xl text-mainpp-200  tracking-[1px] md:mb-1">
+            <div className="md:w-[500px] md:ml-10 mt-4">
+              <h1 className="text-xl md:text-3xl text-mainpp-200 tracking-[1px] md:mb-1">
                 Manual download :
               </h1>
               <span className="text-mainbl-50">
