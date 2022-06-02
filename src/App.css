@@ -8,7 +8,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 100vh;
+  /*height*/
+  min-height: 50vh;
   border: none;
   padding: 0;
   margin: 0;
@@ -47,17 +48,17 @@
 }
 .shri {
   width: 100%;
-  height: 450px;
+  height: 400px;
   object-fit: cover;
 }
 .kiran {
   width: 100%;
-  height: 450px;
+  height: 400px;
   object-fit: cover;
 }
 .jaya {
   width: 100%;
-  height: 450px;
+  height: 400px;
   object-fit: cover;
 }
 .purusoth {
@@ -122,15 +123,15 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 120px;
+  height: 50px;
   z-index: 1;
   font-family: "poppins";
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 28px;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 4px 0;
   text-align: center;
 }
 
@@ -142,16 +143,17 @@ h2 {
 
 .users {
   position: absolute;
-  bottom: -100px;
+  bottom: -10px;
   left: 0;
   opacity: 0;
-  color: #121212;
-  background: #b64fc8;
+  color: #b64fc8;
+  background: #2c2f34;
   width: 100%;
-  height: 100px;
+  height: 70px;
   z-index: 3;
   padding: 10px;
-  transition: 0.4s;
+  transition: 0.2s;
+  text-transform: capitalize;
 }
 
 .profile-two .social-icons .lists .icons {

@@ -23,7 +23,7 @@ const Howto = () => {
               </h1>
               <h1 className="text-mainbl-50 ">
                 go to the extension tab <br />
-                <span className="text-mainpp-200 font-bold ml-5">
+                <span className="text-mainpp-200 font-bold ml-5 ">
                   {">>>"}
                 </span>{" "}
                 search for black panther
