@@ -10,12 +10,14 @@ import RingLoader from "react-spinners/RingLoader";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 2000);
   }, []);
+
   return (
     <>
       {loading ? (
@@ -23,12 +25,7 @@ const App = () => {
           className="flex bg-mainbl-200 justify-center items-center
          w-[100%] h-[100vh]"
         >
-          <RingLoader
-            color="#B64FC8"
-            loading={loading}
-            size={200}
-            className=""
-          />
+          <RingLoader color="#B64FC8" loading={loading} size={180} />
         </div>
       ) : (
         <>
