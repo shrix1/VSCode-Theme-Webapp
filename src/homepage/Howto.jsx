@@ -3,6 +3,7 @@ const Howto = () => {
     <>
       {/*--------------------------main section-------------------------- */}
       <main
+        id="Howto"
         className="flex flex-col  h-[43vh] justify-evenly p-4 items-center 
         font-pop capitalize bg-mainbl-200"
       >
