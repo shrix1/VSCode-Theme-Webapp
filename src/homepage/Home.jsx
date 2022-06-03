@@ -25,7 +25,7 @@ export default function Home() {
             hover:before:border-[3.5px] hover:before:-translate-x-[37px] 
             hover:before:-translate-y-[9px] before:transition-transform 
             before:duration-500 hover:bg-transparent transition-color ease-in
-            duration-500 before:ease-in-out ml-[5rem] md:w-[300px] md:h-[105px] 
+            duration-500 before:ease-in-out ml-[5rem] md:w-[299px] md:h-[105px] 
             md:before:w-[300px] md:before:h-[105px] md:before:-translate-x-[60px]
             md:before:-translate-y-[30px] md:hover:before:-translate-x-[49px]
             md:hover:before:-translate-y-[19px] md:hover:before:border-4 
