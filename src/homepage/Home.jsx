@@ -14,8 +14,7 @@ export default function Home() {
           <div className="w-[350px] md:w-[1000px] ">
             <img src={image} alt="themephoto" title="theme" />
           </div>
-
-          {/* ----------------button-----------------------*/}
+          {/* --------------------button-----------------------*/}
           <div className=" md:-ml-[190px] -mt-[100px]">
             <button
               title="download"
