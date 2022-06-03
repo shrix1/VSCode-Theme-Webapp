@@ -27,11 +27,11 @@ const Form = () => {
       <section className="bg-mainbl-200 min-h-[70vh] relative font-pop">
         <div className="flex flex-row">
           <div
-            className="absolute top-20 left-[30%] lg:left-[35%] flex text-2xl 
-          font-bold text-white"
+            className="absolute top-2 left-[36%] lg:left-[37%] flex text-2xl 
+           "
           >
-            <h2 className="  text-center text-mainpp-200 text-[35px] -ml-4 md:text-5xl md:ml-[150px]">
-              Contact Us
+            <h2 className=" text-center text-mainpp-200 text-[25px] -ml-4  md:text-4xl md:ml-[150px]">
+               <span className="text-white">Contact</span> Us
             </h2>
           </div>
           {/* ----------------------form div---------------------------------------- */}
@@ -40,7 +40,7 @@ const Form = () => {
             transform translate-x-[-50%] translate-y-[-50%] mb-10"
           >
             <div
-              className="p-3 lg:p-6 rounded-md shadow-md shadow-white-500/50 
+              className="p-3 lg:p-6 rounded-2xl shadow-[0px_0px_30px_5px_rgba(0,0,0,0.4)]
             lg:bg-transparent w-[90%] "
             >
               <form onSubmit={submitDb}>
@@ -60,7 +60,8 @@ const Form = () => {
                         rounded
                         transition
                         ease-in-out
-                        m-0                        
+                        mt-5
+                        m-0                       
                         focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200 focus:outline-none"
                     placeholder="Name"
                     name="fullName"
@@ -134,7 +135,7 @@ const Form = () => {
                 {/* ----------------------button---------------------------------------- */}
 
                 <button
-                  className="text-[18px] w-[310px] md:ml-[300px] md:w-[200px] 
+                  className="text-[18px] w-[100%] md:ml-[300px] md:w-[200px] 
                     mr-0
                     px-6
                     py-2.5
