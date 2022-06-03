@@ -14,7 +14,13 @@ import "../App.css";
 const Team = () => {
   return (
     <>
-      <div id="team_container">
+      <h1
+        className="capitalize text-center bg-mainbl-200 md:text-5xl text-mainpp-200 
+      font-pop font-bold text-3xl "
+      >
+        meet the team
+      </h1>
+      <div id="team_container" className="font-pop">
         <div className="card-wrapper">
           <div className="card profile-two">
             <div className="card-image profile-img--two">
@@ -39,7 +45,6 @@ const Team = () => {
               <h2>
                 Shriprasanna
                 <br />
-                {/* <span className="job-title">UI Designer</span> */}
               </h2>
             </div>
           </div>
@@ -67,7 +72,6 @@ const Team = () => {
               <h2>
                 kiran kumar
                 <br />
-                {/* <span className="job-title">UI Designer</span> */}
               </h2>
             </div>
           </div>
@@ -95,7 +99,6 @@ const Team = () => {
               <h2>
                 pursusoth
                 <br />
-                {/* <span className="job-title">UI Designer</span> */}
               </h2>
             </div>
           </div>

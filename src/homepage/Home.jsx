@@ -21,7 +21,7 @@ export default function Home() {
               title="download"
               className=" w-[220px] h-20 bg-mainbl-50 rounded-md 
             before:absolute before:-translate-x-7 before:-translate-y-4
-            before:border-mainpp-200 before:w-[220px] before:h-20 
+            before:border-mainpp-200 before:w-[221px] before:h-20 
             before:z-[0] before:rounded-md before:border-[3px] 
             hover:before:border-[3.5px] hover:before:-translate-x-[37px] 
             hover:before:-translate-y-[9px] before:transition-transform 
@@ -29,7 +29,7 @@ export default function Home() {
             duration-500 before:ease-in-out ml-[5rem] md:w-[300px] md:h-[105px] 
             md:before:w-[300px] md:before:h-[105px] md:before:-translate-x-[60px]
             md:before:-translate-y-[30px] md:hover:before:-translate-x-[49px]
-            md:hover:before:-translate-y-[20px] md:hover:before:border-4 
+            md:hover:before:-translate-y-[19px] md:hover:before:border-4 
             md:border-[3px] md:ml-12"
             >
               {/* ----add link here------- */}
@@ -37,7 +37,9 @@ export default function Home() {
                 <span className="text-3xl font-semibold text-white md:text-[40px]">
                   Download <br />
                 </span>
-                <span className="font-extrabold">Stable Version : </span>
+                <span className="font-extrabold text-white">
+                  Stable Version :{" "}
+                </span>
                 <span className="text-mainpp-200 font-extrabold text-[18px]">
                   1.2.2
                 </span>

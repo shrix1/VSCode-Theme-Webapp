@@ -43,7 +43,7 @@ const Form = () => {
               className="p-3 lg:p-6 rounded-md shadow-md shadow-white-500/50 
             lg:bg-transparent w-[90%] "
             >
-              <form onSubmit={submitDb} className="">
+              <form onSubmit={submitDb}>
                 {/* ----------------------name---------------------------------------- */}
 
                 <div className="form-group mb-6">

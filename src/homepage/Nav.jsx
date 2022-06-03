@@ -12,7 +12,7 @@ export default function Nav() {
       {/*---------------------nav -----------------------------------*/}
       <nav
         className="w-[100%] p-5 md:h-[7vh] bg-mainbl-200 font-pop 
-      md:flex md:justify-around md:items-center"
+      md:flex md:justify-around md:items-center border-b-[1px] border-mainbl-100"
       >
         {/* logo/dropdown */}
         <div className="flex justify-between">
