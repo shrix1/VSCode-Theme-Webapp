@@ -32,7 +32,7 @@ export default function Home() {
             md:hover:before:-translate-y-[19px] md:hover:before:border-4 
             md:border-[3px] md:ml-12"
             >
-              {/* ----add link here------- */}
+              {/* ------------------add link here--------------*/}
               <a href="/">
                 <span className="text-3xl font-semibold text-white md:text-[40px]">
                   Download <br />
