@@ -31,7 +31,7 @@ const Form = () => {
            "
           >
             <h2 className=" text-center text-mainpp-200 text-[25px] -ml-4  md:text-4xl md:ml-[150px]">
-               <span className="text-white">Contact</span> Us
+              <span className="text-white">Contact</span> Us
             </h2>
           </div>
           {/* ----------------------form div---------------------------------------- */}
