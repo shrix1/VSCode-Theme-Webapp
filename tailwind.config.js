@@ -2,7 +2,6 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      //custom ui related stuffs (dont delete it)
       fontFamily: {
         pop: "'Poppins',serif",
         space: "'Space Grotesk',serif",

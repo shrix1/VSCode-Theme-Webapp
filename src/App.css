@@ -149,13 +149,14 @@ h2 {
   left: 0;
   opacity: 0;
   color: #b64fc8;
-  background: #2c2f34;
+  background: rgba(43, 46, 51, 0.836);
   width: 100%;
   height: 70px;
   z-index: 3;
   padding: 10px;
   transition: 0.2s;
   text-transform: capitalize;
+  border-radius: 5px;
 }
 
 .profile-two .social-icons .lists .icons {
