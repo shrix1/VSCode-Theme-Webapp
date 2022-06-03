@@ -24,10 +24,7 @@ const Form = () => {
 
   return (
     <>
-      <section
-        id="contact"
-        className="bg-mainbl-200 min-h-[70vh] relative font-pop"
-      >
+      <section className="bg-mainbl-200 min-h-[70vh] relative font-pop">
         <div className="flex flex-row">
           <div
             className="absolute top-20 left-[30%] lg:left-[35%] flex text-2xl 
@@ -39,7 +36,6 @@ const Form = () => {
           </div>
           {/* ----------------------form div---------------------------------------- */}
           <div
-            id="form_container"
             className=" w-[95%] lg:w-[50%] flex justify-center absolute top-[50%] left-[50%] 
             transform translate-x-[-50%] translate-y-[-50%] mb-10"
           >
@@ -50,7 +46,7 @@ const Form = () => {
               <form onSubmit={submitDb} className="">
                 {/* ----------------------name---------------------------------------- */}
 
-                <div className="form-group mb-6 ">
+                <div className="form-group mb-6">
                   <input
                     type="text"
                     className="form-control bg-mainbl-100 w-full px-3 md:h-[60px] md:focus:text-xl
@@ -66,7 +62,6 @@ const Form = () => {
                         ease-in-out
                         m-0                        
                         focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200 focus:outline-none"
-                    id="exampleInput7"
                     placeholder="Name"
                     name="fullName"
                     onChange={formData}
@@ -95,8 +90,7 @@ const Form = () => {
                         ease-in-out
                         m-0
                         focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200 focus:outline-none"
-                    id="exampleInput8"
-                    placeholder="Email address"
+                    placeholder="Email"
                     name="email"
                     onChange={formData}
                     value={data.email}
@@ -128,7 +122,6 @@ const Form = () => {
                         m-0
                       focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200 focus:outline-none
                     "
-                    id="exampleFormControlTextarea13"
                     rows="4"
                     placeholder="Message"
                     name="message"
