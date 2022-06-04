@@ -45,17 +45,5 @@
     "postcss": "^8.4.14",
     "react-scripts": "^5.0.1",
     "tailwindcss": "^3.0.24"
-  },
-  "description": "",
-  "main": "postcss.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shrix1/miniproject.git"
-  },
-  "author": "shriprasanna",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shrix1/miniproject/issues"
-  },
-  "homepage": "https://github.com/shrix1/miniproject#readme"
+  }
 }
