@@ -19,7 +19,10 @@ const Form = () => {
 
   const submitDb = (ev) => {
     ev.preventDefault();
-    console.log(data);
+    // const keyValue = push(child(ref(db), "posts")).key;
+    // const updateInDb = {};
+    // updateInDb["/" + keyValue] = data;
+    // return update(ref(db), updateInDb);
   };
 
   return (
