@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { db } from "./firebase";
+import { push, ref, child, update } from "firebase/database";
 
 const Form = () => {
   const [data, setData] = useState({
@@ -19,10 +21,10 @@ const Form = () => {
 
   const submitDb = (ev) => {
     ev.preventDefault();
-    // const keyValue = push(child(ref(db), "posts")).key;
-    // const updateInDb = {};
-    // updateInDb["/" + keyValue] = data;
-    // return update(ref(db), updateInDb);
+    const keyValue = push(child(ref(db), "posts")).key;
+    const updateInDb = {};
+    updateInDb["/" + keyValue] = data;
+    return update(ref(db), updateInDb);
   };
 
   return (
