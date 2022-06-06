@@ -44,8 +44,8 @@ export default function Review() {
       setdbList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     console.log("fetched");
-    getData();
-  });
+    // getData();
+  }, []);
 
   return (
     <>
@@ -106,9 +106,13 @@ export default function Review() {
                   className="max-w-[60%] h-auto  border-2 border-white p-5 mb-5
                 rounded-md bg-mainbl-100 leading-10"
                 >
-                  <h1 className="text-3xl capitalize">{post.title}</h1>
-                  <h1 className="text-white">{post.message}</h1>
-                  <h1 className="">
+                  <h1 key="title" className="text-3xl capitalize">
+                    {post.title}
+                  </h1>
+                  <h1 key="message" className="text-white">
+                    {post.message}
+                  </h1>
+                  <h1 key="name" className="">
                     By:
                     <span className="text-mainpp-200 font-bold">
                       {post.name}

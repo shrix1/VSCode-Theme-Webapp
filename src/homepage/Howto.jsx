@@ -1,3 +1,5 @@
+import React from "react";
+
 const Howto = () => {
   return (
     <>
@@ -57,4 +59,5 @@ const Howto = () => {
     </>
   );
 };
+
 export default Howto;
