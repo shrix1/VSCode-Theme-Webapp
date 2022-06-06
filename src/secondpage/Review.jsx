@@ -51,7 +51,7 @@ export default function Review() {
     <>
       <section
         className="w-[100%] min-h-[80vh] bg-mainbl-200 font-pop
-       flex justify-center items-center flex-col"
+       flex justify-center items-center flex-col "
       >
         <h1 className=" text-5xl text-mainpp-200 ">Reviews</h1>
         <div
@@ -61,7 +61,10 @@ export default function Review() {
           <h1 className="text-2xl text-mainpp-100 capitalize">
             write a review here
           </h1>
-          <form onSubmit={createPost}>
+          <form
+            onSubmit={createPost}
+            className="flex justify-center items-center flex-col"
+          >
             <input
               type="text"
               placeholder="Title"
@@ -83,8 +86,8 @@ export default function Review() {
               maxLength={100}
             />
             <button
-              className="p-2 bg-mainpp-200 rounded-md ml-[140px] mt-2
-             capitalize"
+              className="p-2 bg-mainpp-200 rounded-md ml-[140px] mt-3
+             capitalize md:ml-0"
             >
               submit post
             </button>
@@ -106,9 +109,8 @@ export default function Review() {
                   <h1 className="text-3xl capitalize">{post.title}</h1>
                   <h1 className="text-white">{post.message}</h1>
                   <h1 className="">
-                    By:{" "}
+                    By:
                     <span className="text-mainpp-200 font-bold">
-                      {" "}
                       {post.name}
                     </span>
                   </h1>
