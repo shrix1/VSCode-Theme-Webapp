@@ -4,6 +4,7 @@ import Home from "./homepage/Home";
 import Howto from "./homepage/Howto";
 import Form from "./secondpage/Form";
 import Team from "./secondpage/Team";
+import Review from "./secondpage/Review";
 import React, { useState, useEffect } from "react";
 import RingLoader from "react-spinners/RingLoader";
 // SyncLoader
@@ -34,6 +35,7 @@ const App = () => {
           <Howto />
           <Form />
           <Team />
+          <Review />
         </>
       )}
     </>
