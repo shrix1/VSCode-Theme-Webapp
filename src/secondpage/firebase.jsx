@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database"; // for form db
+import { getFirestore } from "firebase/firestore"; // for form db
 import { getAuth, GoogleAuthProvider } from "firebase/auth"; // for auth/google provider
 
 const firebaseConfig = {
@@ -14,5 +15,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const db = getDatabase(app); // for form db
+export const dbreview = getFirestore(app); // for form db
 export const auth = getAuth(app); // for auth
-export const provider = new GoogleAuthProvider(app); // google auth
+export const provider = new GoogleAuthProvider(); // google auth

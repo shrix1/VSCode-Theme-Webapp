@@ -135,7 +135,7 @@ const Form = () => {
                     onChange={formData}
                     value={data.message}
                     required
-                  ></textarea>
+                  />
                 </div>
 
                 {/* ----------------------button---------------------------------------- */}
