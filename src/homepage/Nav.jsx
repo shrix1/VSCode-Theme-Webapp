@@ -5,7 +5,7 @@ import { signInWithPopup, signOut } from "firebase/auth";
 import { auth, provider } from "../secondpage/firebase";
 
 export default function Nav() {
-  const [isauth, setIsauth] = useState(false);
+  const [isauth, setIsauth] = useState(localStorage.getItem("auth"));
 
   //for menu DropDown
   const openDropdown = () => {
