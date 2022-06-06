@@ -6,11 +6,14 @@ import { auth, provider } from "../secondpage/firebase";
 
 export default function Nav() {
   const [isauth, setIsauth] = useState(false);
+
+  //for menu DropDown
   const openDropdown = () => {
     const dropdown = document.getElementById("dropdown");
     dropdown.classList.toggle("hidden");
   };
 
+  //user logged in
   const googleLoginIn = () => {
     signInWithPopup(auth, provider).then(() => {
       localStorage.setItem("auth", true);
@@ -18,6 +21,7 @@ export default function Nav() {
     });
   };
 
+  //user logged out
   const googleLogout = () => {
     signOut(auth).then(() => {
       localStorage.clear();
@@ -83,6 +87,8 @@ export default function Nav() {
             </li>
           </ul>
           {/* --------------------download btn---------------------------- */}
+
+          {/* cs for login and out */}
           {!isauth ? (
             <button
               onClick={googleLoginIn}
