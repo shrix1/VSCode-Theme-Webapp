@@ -41,7 +41,7 @@ const Form = () => {
             className="absolute top-2 left-[36%] lg:left-[37%] flex text-2xl 
            "
           >
-            <h2 className=" text-center text-mainpp-200 text-[25px] -ml-4  md:text-4xl md:ml-[150px]">
+            <h2 className=" text-center text-mainpp-200 text-[25px] -ml-4 md:text-4xl md:ml-[150px]">
               <span className="text-white">Contact</span> Us
             </h2>
           </div>
@@ -51,7 +51,7 @@ const Form = () => {
             transform translate-x-[-50%] translate-y-[-50%] mb-10"
           >
             <div
-              className="p-3 lg:p-6 rounded-2xl shadow-[0px_0px_30px_5px_rgba(0,0,0,0.4)]
+              className="p-3 lg:p-6 rounded-xl shadow-[0px_0px_30px_5px_rgba(0,0,0,0.4)]
             lg:bg-transparent w-[90%] "
             >
               <form onSubmit={submitDb}>
@@ -149,7 +149,7 @@ const Form = () => {
                   className="text-[18px] w-[100%] md:ml-[300px] md:w-[200px] 
                     mr-0
                     px-6
-                    py-2.5
+                    py-2
                     bg-mainpp-200
                     text-white
                     font-light

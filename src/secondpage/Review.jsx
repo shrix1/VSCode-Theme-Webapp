@@ -60,7 +60,7 @@ export default function Review() {
       setdbList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
       console.log("fetched");
     };
-    getData();
+    // getData();
   }, [check]);
 
   return (
@@ -86,27 +86,27 @@ export default function Review() {
               type="text"
               placeholder="Title"
               name="title"
-              className="mt-4 rounded-md p-2 w-[340px] md:w-[600px] text-[20px] border-2
-              outline-none focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200
-             border-solid border-gray-300  bg-mainbl-100"
               value={data.title}
               onChange={getData}
               required
+              className="mt-4 rounded-md p-2 w-[340px] md:w-[600px] text-[20px] border-2
+              outline-none focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200
+             border-solid border-gray-300  bg-mainbl-100"
             />
             <textarea
               name="message"
               placeholder="Message here..."
-              className="mt-4 rounded-md p-2 w-[340px] md:w-[600px] h-[170px] text-[20px] border-2               
-              outline-none focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200
-              border-solid border-gray-300  bg-mainbl-100"
               value={data.message}
               onChange={getData}
               required
               maxLength={100}
+              className="mt-4 rounded-md p-2 w-[340px] md:w-[600px] h-[170px] text-[20px] border-2               
+              outline-none focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200
+              border-solid border-gray-300  bg-mainbl-100"
             />
             <button
-              className="p-2 bg-mainpp-200 rounded-md ml-[140px] mt-3
-             capitalize md:ml-0  hover:bg-transparent  hover:border-mainpp-200
+              className="p-[6px] bg-mainpp-200 rounded-md mt-3 w-[340px] 
+             capitalize hover:bg-transparent  hover:border-mainpp-200
              hover:text-white border-2 border-mainpp-200"
             >
               submit post
