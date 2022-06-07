@@ -40,6 +40,10 @@ export default function Review() {
       name: auth.currentUser.displayName,
       id: auth.currentUser.uid,
     });
+    setData({
+      title: "",
+      message: "",
+    });
   };
 
   const deletePost = async (id) => {
@@ -98,7 +102,8 @@ export default function Review() {
             />
             <button
               className="p-2 bg-mainpp-200 rounded-md ml-[140px] mt-3
-             capitalize md:ml-0"
+             capitalize md:ml-0  hover:bg-transparent  hover:border-mainpp-200
+             hover:text-white border-2 border-mainpp-200"
             >
               submit post
             </button>
@@ -116,8 +121,8 @@ export default function Review() {
               <>
                 <div
                   className="w-[340px] md:w-[600px] h-auto shadow-lg p-5 mb-5
-                rounded-md bg-mainbl-200 leading-10 border-[0.2px] border-mainpp-200
-                flex justify-between"
+                rounded-md bg-mainbl-200 leading-10 border-[1px] border-mainbl-100 
+                flex justify-between hover:border-mainpp-200"
                 >
                   <div>
                     <h1 key={post.id} className="text-3xl capitalize">
@@ -126,7 +131,7 @@ export default function Review() {
                     <h1 key="message" className="text-white">
                       {post.message}
                     </h1>
-                    <h1 key="name" className="">
+                    <h1 key="name" className="capitalize">
                       By:{" "}
                       <span className="text-mainpp-200 font-bold tracking-[3px]">
                         {post.name}
@@ -138,7 +143,9 @@ export default function Review() {
                       onClick={() => {
                         deletePost(post.id);
                       }}
-                      className="p-2 bg-mainpp-200 rounded-md"
+                      title="delete post"
+                      className="p-2 bg-mainpp-200 rounded-md  hover:bg-transparent  hover:border-mainpp-200
+                      hover:text-white border-2 border-mainpp-200"
                     >
                       <AiOutlineDelete className="text-xl " />
                     </button>

@@ -24,6 +24,11 @@ const Form = () => {
     const keyValue = push(child(ref(db), "posts")).key;
     const updateInDb = {};
     updateInDb["/" + keyValue] = data;
+    setData({
+      fullName: "",
+      email: "",
+      message: "",
+    });
     return update(ref(db), updateInDb);
     //need to use any toaster npms for notified notification
   };
@@ -157,7 +162,9 @@ const Form = () => {
                     active:bg-mainbl-100  active:shadow-lg
                     transition
                     duration-150
-                    ease-in-out"
+                    ease-in-out
+                    hover:bg-transparent  hover:border-mainpp-200
+                    hover:text-white border-2 border-mainpp-200"
                 >
                   Submit
                 </button>

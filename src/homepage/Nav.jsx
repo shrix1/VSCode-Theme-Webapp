@@ -93,7 +93,7 @@ export default function Nav() {
             <button
               onClick={googleLoginIn}
               className="p-2 bg-mainpp-200 rounded-md mt-3 w-[140px] ml-[120px] 
-        border-mainpp-200 hover:bg-transparent border-2 hover:border-mainpp-200
+        border-mainpp-200 border-2 hover:bg-transparent  hover:border-mainpp-200
         hover:text-white transition-colors duration-300 font-bold tracking-wide"
             >
               Login <BiLogIn className="inline ml-3 -mt-[2px] text-2xl" />
