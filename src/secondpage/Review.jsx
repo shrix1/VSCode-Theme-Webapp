@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { addDoc, collection, getDocs } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  getDocs,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
 import { dbReview, auth } from "./firebase";
+import { AiOutlineDelete } from "react-icons/ai";
 
 export default function Review() {
   const [data, setData] = useState({
@@ -12,7 +19,6 @@ export default function Review() {
   //normal form grabbling
   const getData = (e) => {
     const { name, value } = e.target;
-    console.log(value);
     setData((prev) => {
       return {
         ...prev,
@@ -31,31 +37,36 @@ export default function Review() {
     await addDoc(postCollection, {
       title: data.title,
       message: data.message,
-      author: {
-        name: auth.currentUser.displayName,
-        id: auth.currentUser.uid,
-      },
+      name: auth.currentUser.displayName,
+      id: auth.currentUser.uid,
     });
+  };
+
+  const deletePost = async (id) => {
+    const postDoc = doc(dbReview, "reviews", id);
+    await deleteDoc(postDoc);
   };
 
   useEffect(() => {
     const getData = async () => {
+      const postCollection = collection(dbReview, "reviews");
       const data = await getDocs(postCollection);
       setdbList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+      console.log("fetched");
     };
-    console.log("fetched");
-    // getData();
-  }, []);
+    getData();
+  }, [deletePost]);
 
   return (
     <>
+      {/* review writing section */}
       <section
         className="w-[100%] min-h-[80vh] bg-mainbl-200 font-pop
        flex justify-center items-center flex-col "
       >
         <h1 className=" text-5xl text-mainpp-200 ">Reviews</h1>
         <div
-          className="w-[70%] flex justify-between items-center
+          className="w-[65%] flex justify-between items-center
         flex-col mt-9"
         >
           <h1 className="text-2xl text-mainpp-100 capitalize">
@@ -69,7 +80,7 @@ export default function Review() {
               type="text"
               placeholder="Title"
               name="title"
-              className="mt-4 rounded-md p-2 w-[400px] text-[20px]
+              className="mt-4 rounded-md p-2 w-[340px] md:w-[600px] text-[20px]
               outline-none"
               value={data.title}
               onChange={getData}
@@ -78,7 +89,7 @@ export default function Review() {
             <textarea
               name="message"
               placeholder="Message here..."
-              className="mt-4 rounded-md p-2 w-[400px] h-[170px] text-[20px]
+              className="mt-4 rounded-md p-2 w-[340px] md:w-[600px] h-[170px] text-[20px]
               outline-none"
               value={data.message}
               onChange={getData}
@@ -94,6 +105,7 @@ export default function Review() {
           </form>
         </div>
 
+        {/* review secti0on */}
         <h1 className="mt-10 text-4xl text-white mb-5">
           User <span className="text-mainpp-200">reviews</span>
         </h1>
@@ -103,21 +115,34 @@ export default function Review() {
             return (
               <>
                 <div
-                  className="max-w-[60%] h-auto  border-2 border-white p-5 mb-5
-                rounded-md bg-mainbl-100 leading-10"
+                  className="w-[340px] md:w-[600px] h-auto shadow-lg p-5 mb-5
+                rounded-md bg-mainbl-200 leading-10 border-[0.2px] border-mainpp-200
+                flex justify-between"
                 >
-                  <h1 key="title" className="text-3xl capitalize">
-                    {post.title}
-                  </h1>
-                  <h1 key="message" className="text-white">
-                    {post.message}
-                  </h1>
-                  <h1 key="name" className="">
-                    By:
-                    <span className="text-mainpp-200 font-bold">
-                      {post.name}
-                    </span>
-                  </h1>
+                  <div>
+                    <h1 key={post.id} className="text-3xl capitalize">
+                      {post.title}
+                    </h1>
+                    <h1 key="message" className="text-white">
+                      {post.message}
+                    </h1>
+                    <h1 key="name" className="">
+                      By:{" "}
+                      <span className="text-mainpp-200 font-bold tracking-[3px]">
+                        {post.name}
+                      </span>
+                    </h1>
+                  </div>
+                  <div>
+                    <button
+                      onClick={() => {
+                        deletePost(post.id);
+                      }}
+                      className="p-2 bg-mainpp-200 rounded-md"
+                    >
+                      <AiOutlineDelete className="text-xl " />
+                    </button>
+                  </div>
                 </div>
               </>
             );
