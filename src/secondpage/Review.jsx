@@ -15,6 +15,7 @@ export default function Review() {
     message: "",
   });
   const [dbList, setdbList] = useState([]);
+  const [check, setCheck] = useState(false);
 
   //normal form grabbling
   const getData = (e) => {
@@ -49,6 +50,7 @@ export default function Review() {
   const deletePost = async (id) => {
     const postDoc = doc(dbReview, "reviews", id);
     await deleteDoc(postDoc);
+    setCheck(!check);
   };
 
   useEffect(() => {
@@ -59,7 +61,7 @@ export default function Review() {
       console.log("fetched");
     };
     getData();
-  }, []);
+  }, [check]);
 
   return (
     <>
@@ -146,7 +148,7 @@ export default function Review() {
                         deletePost(post.id);
                       }}
                       title="delete post"
-                      className="p-2 bg-mainpp-200 rounded-md  hover:bg-transparent  hover:border-mainpp-200
+                      className="p-2 bg-mainpp-200 rounded-md  hover:bg-transparent hover:border-mainpp-200
                       hover:text-white border-2 border-mainpp-200"
                     >
                       <AiOutlineDelete className="text-xl " />
