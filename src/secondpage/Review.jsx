@@ -15,7 +15,7 @@ export default function Review() {
     message: "",
   });
   const [dbList, setdbList] = useState([]);
-  const [check, setCheck] = useState(false);
+  const [check, setCheck] = useState(1);
 
   //normal form grabbling
   const getData = (e) => {
@@ -50,7 +50,7 @@ export default function Review() {
   const deletePost = async (id) => {
     const postDoc = doc(dbReview, "reviews", id);
     await deleteDoc(postDoc);
-    setCheck(!check);
+    setCheck(check + 1);
   };
 
   useEffect(() => {
