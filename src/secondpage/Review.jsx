@@ -59,7 +59,7 @@ export default function Review() {
       console.log("fetched");
     };
     getData();
-  }, [deletePost]);
+  }, []);
 
   return (
     <>
@@ -73,8 +73,8 @@ export default function Review() {
           className="w-[65%] flex justify-between items-center
         flex-col mt-9"
         >
-          <h1 className="text-2xl text-mainpp-100 capitalize">
-            write a review here
+          <h1 className="text-3xl text-mainpp-100 capitalize">
+            write a review
           </h1>
           <form
             onSubmit={createPost}
@@ -84,8 +84,9 @@ export default function Review() {
               type="text"
               placeholder="Title"
               name="title"
-              className="mt-4 rounded-md p-2 w-[340px] md:w-[600px] text-[20px]
-              outline-none"
+              className="mt-4 rounded-md p-2 w-[340px] md:w-[600px] text-[20px] border-2
+              outline-none focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200
+             border-solid border-gray-300  bg-mainbl-100"
               value={data.title}
               onChange={getData}
               required
@@ -93,8 +94,9 @@ export default function Review() {
             <textarea
               name="message"
               placeholder="Message here..."
-              className="mt-4 rounded-md p-2 w-[340px] md:w-[600px] h-[170px] text-[20px]
-              outline-none"
+              className="mt-4 rounded-md p-2 w-[340px] md:w-[600px] h-[170px] text-[20px] border-2               
+              outline-none focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200
+              border-solid border-gray-300  bg-mainbl-100"
               value={data.message}
               onChange={getData}
               required
