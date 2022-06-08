@@ -3,6 +3,7 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { BiLogIn, BiLogOut } from "react-icons/bi";
 import { signInWithPopup, signOut } from "firebase/auth";
 import { auth, provider } from "../secondpage/firebase";
+// import { ToastContainer, toast } from "react-toastify";
 
 export default function Nav() {
   const [isauth, setIsauth] = useState(localStorage.getItem("auth"));
