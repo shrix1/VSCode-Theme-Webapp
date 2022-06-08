@@ -130,28 +130,28 @@ export default function Review() {
                 flex justify-between hover:border-mainpp-200"
                 >
                   <div>
-                    <h1 className="text-3xl capitalize">{post.title}</h1>
-                    <h1 className="text-white">{post.message}</h1>
-                    <h1 className="capitalize">
-                      By:{" "}
-                      <span className="text-mainpp-200 font-bold tracking-[3px]">
+                    <h1 className="text-3xl capitalize text-white font-semibold">
+                      {post.title}
+                    </h1>
+                    <h1 className="text-mainbl-50">{post.message}</h1>
+                    <h1 className="capitalize text-mainbl-50">
+                      By :{" "}
+                      <span className="text-mainpp-200 font-bold tracking-[2px]">
                         {post.name}
                       </span>
                     </h1>
                   </div>
                   <div>
-                    {post.id === auth.currentUser.uid && (
-                      <button
-                        onClick={() => {
-                          deletePost(post.id);
-                        }}
-                        title="delete post"
-                        className="p-2 bg-mainpp-200 rounded-md  hover:bg-transparent hover:border-mainpp-200
+                    <button
+                      onClick={() => {
+                        deletePost(post.id);
+                      }}
+                      title="delete post"
+                      className="p-2 bg-mainpp-200 rounded-md  hover:bg-transparent hover:border-mainpp-200
                       hover:text-white border-2 border-mainpp-200"
-                      >
-                        <AiOutlineDelete className="text-xl " />
-                      </button>
-                    )}
+                    >
+                      <AiOutlineDelete className="text-xl " />
+                    </button>
                   </div>
                 </div>
               </>
