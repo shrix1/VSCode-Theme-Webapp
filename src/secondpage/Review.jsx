@@ -45,6 +45,7 @@ export default function Review() {
       title: "",
       message: "",
     });
+    setCheck(check + 1);
   };
 
   const deletePost = async (id) => {
@@ -129,13 +130,9 @@ export default function Review() {
                 flex justify-between hover:border-mainpp-200"
                 >
                   <div>
-                    <h1 key={post.id} className="text-3xl capitalize">
-                      {post.title}
-                    </h1>
-                    <h1 key="message" className="text-white">
-                      {post.message}
-                    </h1>
-                    <h1 key="name" className="capitalize">
+                    <h1 className="text-3xl capitalize">{post.title}</h1>
+                    <h1 className="text-white">{post.message}</h1>
+                    <h1 className="capitalize">
                       By:{" "}
                       <span className="text-mainpp-200 font-bold tracking-[3px]">
                         {post.name}
