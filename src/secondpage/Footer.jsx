@@ -3,14 +3,14 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className=" bg-mainbl-200 text-white">
+      <div className=" bg-mainbl-200 text-white pt-10">
         <div
           id="footer_container"
-          className=" mx-5 md: flex justify-center gap-[220px]"
+          className=" mx-5 md:flex justify-center gap-[220px] bg-mainbl-200"
         >
-          <div id="left_content" className="md: w-[423px]">
-            <h1 className=" text-[24px]">Theme</h1>
-            <p className=" text-[15px] py-3 text-mainbl-50">
+          <div id="left_content" className="md:w-[423px]">
+            <h1 className="text-[24px]">Theme</h1>
+            <p className="text-[15px] py-3 text-mainbl-50">
               (
               <span className="text-mainpp-200 text-[15px] font-semibold">
                 This poll found that ⅔ of surveyed developers prefer to use a

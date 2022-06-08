@@ -96,7 +96,7 @@
   height: 50px;
   line-height: 50px;
   text-align: center;
-  background: rgba(203, 88, 238, 0.664);
+  background-color: #1d9b;
   font-size: 23px;
   color: rgb(3, 3, 3);
   font-weight: bold;
@@ -117,7 +117,7 @@
 .social-icons .lists .icons:hover {
   background-color: #121212;
   transition: 0.2s;
-  color: #ea80fc;
+  color: #1d9b;
   opacity: 1;
 }
 .details {
@@ -148,7 +148,7 @@ h2 {
   bottom: -10px;
   left: 0;
   opacity: 0;
-  color: #b64fc8;
+  color: #1d9b;
   background: rgba(43, 46, 51, 0.836);
 
   width: 100%;

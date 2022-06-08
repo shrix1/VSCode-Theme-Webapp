@@ -14,9 +14,10 @@ module.exports = {
           50: "#BBBFC4",
         },
         mainpp: {
-          200: "#B64FC8",
-          100: "#EA80FC",
+          200: "#1D9B",
+          100: "#57ddb0bb",
           50: "#FFB2FF",
+          // #B64FC8 #EA80FC
         },
       },
     },

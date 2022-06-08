@@ -28,16 +28,16 @@ const App = () => {
           className="flex bg-mainbl-200 justify-center items-center
          w-[100%] h-[100vh]"
         >
-          <RingLoader color="#B64FC8" loading={loading} size={180} />
+          <RingLoader color="#1D9B" loading={loading} size={180} />
         </div>
       ) : (
         <>
           <Nav />
           <Home />
           <Howto />
-          <Form />
-          <Team />
           <Review />
+          <Team />
+          <Form />
           <Footer />
         </>
       )}

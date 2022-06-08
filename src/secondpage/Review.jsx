@@ -141,15 +141,17 @@ export default function Review() {
             return (
               <>
                 <div
-                  className="w-[340px] md:w-[600px] h-auto shadow-lg p-5 mb-5
-                rounded-md bg-mainbl-200 leading-10 border-[1px] border-mainbl-100 
+                  className="w-[340px] md:w-[600px] h-auto shadow-2xl border-2 p-5 mb-5
+                rounded-md bg-mainbl-200 leading-10  border-mainbl-200 
                 flex justify-between hover:border-mainpp-200"
                 >
                   <div>
-                    <h1 className="text-3xl capitalize text-white font-semibold">
+                    <h1 className="text-4xl capitalize text-white font-semibold ">
                       {post.title}
                     </h1>
-                    <h1 className="text-mainbl-50">{post.message}</h1>
+                    <h1 className="text-mainbl-50 text-[18px]">
+                      {post.message}
+                    </h1>
                     <h1 className="capitalize text-mainbl-50">
                       By :{" "}
                       <span className="text-mainpp-200 font-bold tracking-[2px]">
@@ -158,16 +160,18 @@ export default function Review() {
                     </h1>
                   </div>
                   <div>
-                    <button
-                      onClick={() => {
-                        deletePost(post.id);
-                      }}
-                      title="delete post"
-                      className="p-2 bg-mainpp-200 rounded-md  hover:bg-transparent hover:border-mainpp-200
+                    {post.name === auth.currentUser.displayName && (
+                      <button
+                        onClick={() => {
+                          deletePost(post.id);
+                        }}
+                        title="delete post"
+                        className="p-2 bg-mainpp-200 rounded-md  hover:bg-transparent hover:border-mainpp-200
                       hover:text-white border-2 border-mainpp-200"
-                    >
-                      <AiOutlineDelete className="text-xl " />
-                    </button>
+                      >
+                        <AiOutlineDelete className="text-xl " />
+                      </button>
+                    )}
                   </div>
                 </div>
               </>

@@ -22,7 +22,7 @@ export default function Nav() {
       localStorage.setItem("auth", true);
       setIsauth(true);
       setTo(
-        toast("loggedIn successFully", {
+        toast.success("loggedIn successFully", {
           position: "top-center",
           autoClose: 1000,
           hideProgressBar: false,
@@ -41,7 +41,7 @@ export default function Nav() {
     signOut(auth).then(() => {
       localStorage.clear();
       setIsauth(false);
-      toast("logged out");
+      toast.error("logged out");
     });
   };
 
@@ -118,7 +118,8 @@ export default function Nav() {
                 Login <BiLogIn className="inline ml-3 -mt-[2px] text-2xl" />
               </button>
               <ToastContainer
-                position="top-center"
+                toastStyle={{ backgroundColor: "#121212" }}
+                position="top-right"
                 autoClose={1000}
                 hideProgressBar={false}
                 newestOnTop={false}
@@ -135,12 +136,13 @@ export default function Nav() {
                 onClick={googleLogout}
                 className="p-2 bg-mainpp-200 rounded-md mt-3 w-[140px] ml-[120px] 
               border-mainpp-200 hover:bg-transparent border-2 hover:border-mainpp-200
-              hover:text-white transition-colors duration-300 font-bold tracking-wide"
+              hover:text-white transition-colors duration-300 font-bold tracking-wide "
               >
                 Logout <BiLogOut className="inline ml-3 -mt-[2px] text-2xl" />
               </button>
               <ToastContainer
-                position="top-center"
+                toastStyle={{ backgroundColor: "#121212" }}
+                position="top-right"
                 autoClose={1000}
                 hideProgressBar={false}
                 newestOnTop={false}

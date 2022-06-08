@@ -17,10 +17,10 @@ const Howto = () => {
           how to <span className="text-mainpp-200">download</span> :
         </h1>
         {/*--------------------------- main div--------------------------- */}
-        <div className="md:text-3xl ">
+        <div className="md:text-3xl  ">
           <div className="md:flex md:justify-between md:items-center">
             {/*------------- vscode dload div----------------------- */}
-            <div className="md:w-[500px] md:mr-5">
+            <div className="md:w-[500px] md:mr-5 ">
               <h1 className="text-xl md:text-3xl text-mainpp-200 tracking-[0.7px] md:mb-1">
                 From VSCODE code editor :
               </h1>
@@ -47,7 +47,12 @@ const Howto = () => {
               </h1>
               <span className="text-mainbl-50">
                 follow the{" "}
-                <a href="/" className="text-mainpp-200 underline">
+                <a
+                  href="https://marketplace.visualstudio.com/items?itemName=Shriprasanna.blue-dark-theme"
+                  className="text-mainpp-200 underline"
+                  target="blank"
+                  rel="noreferrer"
+                >
                   link
                 </a>{" "}
                 to download the awesome theme from vscode marketplace .

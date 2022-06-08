@@ -3,7 +3,6 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 // import { BsLink45Deg } from "react-icons/bs";
-
 import shri from "../images/shri.jpg";
 import kiran from "../images/kiran.jpg";
 import purusoth from "../images/purusoth.jpg";
@@ -16,7 +15,7 @@ const Team = () => {
     <>
       <h1
         className="capitalize text-center bg-mainbl-200 md:text-5xl text-mainpp-200 
-      font-pop font-bold text-3xl "
+      font-pop font-bold text-3xl pt-14"
       >
         meet the team
       </h1>
@@ -29,13 +28,23 @@ const Team = () => {
 
             <ul className="social-icons">
               <li className="lists">
-                <a className="icons" href="/">
+                <a
+                  className="icons"
+                  href="https://github.com/shrix1"
+                  target="blank"
+                  rel="noreferrer"
+                >
                   <BsGithub />
                 </a>
               </li>
 
               <li className="lists">
-                <a className="icons" href="/">
+                <a
+                  className="icons"
+                  href="https://www.linkedin.com/in/shriprasanna-b-62aab1208/"
+                  target="blank"
+                  rel="noreferrer"
+                >
                   <AiFillLinkedin />
                 </a>
               </li>
@@ -57,12 +66,22 @@ const Team = () => {
 
             <ul className="social-icons">
               <li className="lists">
-                <a className="icons" href="/">
+                <a
+                  className="icons"
+                  href="https://github.com/kiran0022"
+                  target="blank"
+                  rel="noreferrer"
+                >
                   <BsGithub />
                 </a>
               </li>
               <li className="lists">
-                <a className="icons" href="/">
+                <a
+                  className="icons"
+                  href="https://www.linkedin.com/in/kiran-kumar-k-61ba89203/"
+                  target="blank"
+                  rel="noreferrer"
+                >
                   <AiFillLinkedin />
                 </a>
               </li>
@@ -84,12 +103,22 @@ const Team = () => {
 
             <ul className="social-icons">
               <li className="lists">
-                <a className="icons" href="/">
+                <a
+                  className="icons"
+                  href="https://github.com/"
+                  target="blank"
+                  rel="noreferrer"
+                >
                   <AiOutlineGithub className="hover:text-mainpp-100" />
                 </a>
               </li>
               <li className="lists">
-                <a className="icons" href="/">
+                <a
+                  className="icons"
+                  href="https://www.linkedin.com/in/purushothaman-s-7a7a82233/"
+                  target="blank"
+                  rel="noreferrer"
+                >
                   <AiFillLinkedin />
                 </a>
               </li>{" "}
@@ -111,12 +140,22 @@ const Team = () => {
 
             <ul className="social-icons">
               <li className="lists">
-                <a className="icons" href="/">
+                <a
+                  className="icons"
+                  href="https://github.com/"
+                  target="blank"
+                  rel="noreferrer"
+                >
                   <BsGithub />
                 </a>
               </li>
               <li className="lists">
-                <a className="icons" href="/">
+                <a
+                  className="icons"
+                  href="https://www.linkedin.com/in/jaya-kumar-9a0174226/"
+                  target="blank"
+                  rel="noreferrer"
+                >
                   <AiFillLinkedin />
                 </a>
               </li>
