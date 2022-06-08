@@ -112,7 +112,7 @@ export default function Review() {
               <button
                 className="p-[6px] bg-mainpp-200 rounded-md mt-3 w-[340px] 
              capitalize hover:bg-transparent  hover:border-mainpp-200
-             hover:text-white border-2 border-mainpp-200"
+             hover:text-white border-2 border-mainpp-200 font-semibold tracking-wide"
               >
                 submit post
               </button>
@@ -168,7 +168,7 @@ export default function Review() {
                       className="p-2 bg-mainpp-200 rounded-md  hover:bg-transparent hover:border-mainpp-200
                       hover:text-white border-2 border-mainpp-200"
                     >
-                      <AiOutlineDelete className="text-xl " />
+                      <AiOutlineDelete className="text-xl" />
                     </button>
                   </div>
                 </div>

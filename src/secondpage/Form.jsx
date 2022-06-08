@@ -51,7 +51,7 @@ const Form = () => {
             transform translate-x-[-50%] translate-y-[-50%] mb-10"
           >
             <div
-              className="p-3 lg:p-6 rounded-xl shadow-[0px_0px_30px_5px_rgba(0,0,0,0.4)]
+              className="p-3 lg:p-6 rounded-xl shadow-2xl
             lg:bg-transparent w-[90%] "
             >
               <form onSubmit={submitDb}>

@@ -9,7 +9,7 @@ const Footer = () => {
           className=" mx-5 md:flex justify-center gap-[220px] bg-mainbl-200"
         >
           <div id="left_content" className="md:w-[423px]">
-            <h1 className="text-[24px]">Theme</h1>
+            <h1 className="text-[30px]">Theme</h1>
             <p className="text-[15px] py-3 text-mainbl-50">
               (
               <span className="text-mainpp-200 text-[15px] font-semibold">
@@ -22,7 +22,7 @@ const Footer = () => {
               environment theme downloads you will find always that top 10
               themes are dark
             </p>
-            <button className=" border-2 p-3 hover:text-mainpp-100  hover:border-mainpp-50 rounded-md">
+            <button className=" border-2 p-2 hover:text-mainpp-100  hover:border-mainpp-100 rounded-md">
               <a href="#home"> back to top</a>
             </button>
           </div>
@@ -39,8 +39,9 @@ const Footer = () => {
                 required
               />{" "}
               <button
-                className="text-[18px] text-mainpp-100 rounded-md flex my-3 border-2 border-mainbl-300
-            px-4 py-2 bg-mainbl-300 capitalize hover:bg-transparent hover:border-mainbl-300"
+                className="text-[16px] text-mainpp-100 rounded-md flex my-3 border-2 border-mainbl-300
+            px-4 py-1 bg-mainbl-300 capitalize hover:bg-mainpp-100 hover:border-mainpp-100 hover:text-mainbl-300
+            font-semibold"
               >
                 subscribe
               </button>
