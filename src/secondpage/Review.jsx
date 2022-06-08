@@ -8,12 +8,15 @@ import {
 } from "firebase/firestore";
 import { dbReview, auth } from "./firebase";
 import { AiOutlineDelete } from "react-icons/ai";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 export default function Review() {
   const [data, setData] = useState({
     title: "",
     message: "",
   });
+  // const [to, setTo] = useState(true);
   const [dbList, setdbList] = useState([]);
   const [check, setCheck] = useState(1);
 
@@ -76,7 +79,7 @@ export default function Review() {
           className="w-[65%] flex justify-between items-center
         flex-col mt-9"
         >
-          <h1 className="text-3xl text-mainpp-100 capitalize">
+          <h1 className="text-3xl text-mainpp-100 capitalize" id="review">
             write a review
           </h1>
           <form
@@ -105,13 +108,26 @@ export default function Review() {
               outline-none focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200
               border-solid border-gray-300  bg-mainbl-100"
             />
-            <button
-              className="p-[6px] bg-mainpp-200 rounded-md mt-3 w-[340px] 
+            <div>
+              <button
+                className="p-[6px] bg-mainpp-200 rounded-md mt-3 w-[340px] 
              capitalize hover:bg-transparent  hover:border-mainpp-200
              hover:text-white border-2 border-mainpp-200"
-            >
-              submit post
-            </button>
+              >
+                submit post
+              </button>
+              {/* <ToastContainer
+                position="top-right"
+                autoClose={1000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+              /> */}
+            </div>
           </form>
         </div>
 
