@@ -131,7 +131,6 @@ const Team = () => {
               <h2>
                 jayaKumar
                 <br />
-                {/* <span className="job-title">UI Designer</span> */}
               </h2>
             </div>
           </div>

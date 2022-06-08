@@ -1,12 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
-import { BsDownload } from "react-icons/bs";
+import { BiLogIn, BiLogOut } from "react-icons/bi";
+import { signInWithPopup, signOut } from "firebase/auth";
+import { auth, provider } from "../secondpage/firebase";
 
 export default function Nav() {
+  const [isauth, setIsauth] = useState(localStorage.getItem("auth"));
+
+  //for menu DropDown
   const openDropdown = () => {
     const dropdown = document.getElementById("dropdown");
     dropdown.classList.toggle("hidden");
   };
+
+  //user logged in
+  const googleLoginIn = () => {
+    signInWithPopup(auth, provider).then(() => {
+      localStorage.setItem("auth", true);
+      setIsauth(true);
+    });
+  };
+
+  //user logged out
+  const googleLogout = () => {
+    signOut(auth).then(() => {
+      localStorage.clear();
+      setIsauth(false);
+    });
+  };
+
   return (
     <>
       {/*---------------------nav -----------------------------------*/}
@@ -64,17 +86,28 @@ export default function Nav() {
               </a>
             </li>
           </ul>
-
           {/* --------------------download btn---------------------------- */}
-          <button
-            className="p-2 bg-mainpp-200 rounded-md mt-3 w-[140px] ml-[120px] 
+
+          {/* cs for login and out */}
+          {!isauth ? (
+            <button
+              onClick={googleLoginIn}
+              className="p-2 bg-mainpp-200 rounded-md mt-3 w-[140px] ml-[120px] 
+        border-mainpp-200 border-2 hover:bg-transparent  hover:border-mainpp-200
+        hover:text-white transition-colors duration-300 font-bold tracking-wide"
+            >
+              Login <BiLogIn className="inline ml-3 -mt-[2px] text-2xl" />
+            </button>
+          ) : (
+            <button
+              onClick={googleLogout}
+              className="p-2 bg-mainpp-200 rounded-md mt-3 w-[140px] ml-[120px] 
         border-mainpp-200 hover:bg-transparent border-2 hover:border-mainpp-200
-        hover:text-white transition-colors duration-300"
-          >
-            <a href="/">
-              Download <BsDownload className="inline ml-3 -mt-[2px]" />
-            </a>
-          </button>
+        hover:text-white transition-colors duration-300 font-bold tracking-wide"
+            >
+              Logout <BiLogOut className="inline ml-3 -mt-[2px] text-2xl" />
+            </button>
+          )}
         </div>
       </nav>
     </>

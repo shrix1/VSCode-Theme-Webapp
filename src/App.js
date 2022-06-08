@@ -4,7 +4,11 @@ import Home from "./homepage/Home";
 import Howto from "./homepage/Howto";
 import Form from "./secondpage/Form";
 import Team from "./secondpage/Team";
+<<<<<<< HEAD
 import Footer from "./secondpage/Footer";
+=======
+import Review from "./secondpage/Review";
+>>>>>>> 318849ef43cc76c83ce7f104c94ed7051e09232a
 import React, { useState, useEffect } from "react";
 import RingLoader from "react-spinners/RingLoader";
 // SyncLoader
@@ -16,7 +20,7 @@ const App = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
   }, []);
 
   return (
@@ -35,7 +39,11 @@ const App = () => {
           <Howto />
           <Form />
           <Team />
+<<<<<<< HEAD
           <Footer />
+=======
+          <Review />
+>>>>>>> 318849ef43cc76c83ce7f104c94ed7051e09232a
         </>
       )}
     </>
