@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <section
+        <section id="home"
           className="bg-mainbl-200 md:via-mainbl-200 
           to-mainpp-200 w-[100%] h-[80vh] flex md:h-[80vh] overflow-hidden
         justify-around items-center flex-col font-pop md:flex-row "
