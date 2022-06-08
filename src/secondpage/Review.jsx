@@ -60,7 +60,7 @@ export default function Review() {
       setdbList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
       console.log("fetched");
     };
-    // getData();
+    getData();
   }, [check]);
 
   return (
