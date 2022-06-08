@@ -160,18 +160,16 @@ export default function Review() {
                     </h1>
                   </div>
                   <div>
-                    {post.name === auth.currentUser.displayName && (
-                      <button
-                        onClick={() => {
-                          deletePost(post.id);
-                        }}
-                        title="delete post"
-                        className="p-2 bg-mainpp-200 rounded-md  hover:bg-transparent hover:border-mainpp-200
+                    <button
+                      onClick={() => {
+                        deletePost(post.id);
+                      }}
+                      title="delete post"
+                      className="p-2 bg-mainpp-200 rounded-md  hover:bg-transparent hover:border-mainpp-200
                       hover:text-white border-2 border-mainpp-200"
-                      >
-                        <AiOutlineDelete className="text-xl " />
-                      </button>
-                    )}
+                    >
+                      <AiOutlineDelete className="text-xl " />
+                    </button>
                   </div>
                 </div>
               </>
