@@ -8,7 +8,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function Nav() {
   const [isauth, setIsauth] = useState(localStorage.getItem("auth"));
-  const [to, setTo] = useState(true);
 
   //for menu DropDown
   const openDropdown = () => {
@@ -21,18 +20,7 @@ export default function Nav() {
     signInWithPopup(auth, provider).then(() => {
       localStorage.setItem("auth", true);
       setIsauth(true);
-      setTo(
-        toast.success("loggedIn successFully", {
-          position: "top-center",
-          autoClose: 1000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        })
-      );
-      console.log("log in");
+      toast.success("loggedIn successFully");
     });
   };
 
@@ -50,8 +38,9 @@ export default function Nav() {
       {/*---------------------nav -----------------------------------*/}
 
       <nav
-        className="w-[100%] p-5 md:h-[7vh] bg-mainbl-200 font-pop 
+        className="w-[100%] p-5 md:h-[7vh] bg-mainbl-200 font-pop  
       md:flex md:justify-around md:items-center border-b-[1px] border-mainbl-100"
+        id="nav"
       >
         {/* logo/dropdown */}
         <div className="flex justify-between">
@@ -106,7 +95,7 @@ export default function Nav() {
           {/* --------------------download btn---------------------------- */}
 
           {/* cs for login and out */}
-          {!isauth && to ? (
+          {!isauth ? (
             <div>
               <button
                 onClick={googleLoginIn}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import {
   addDoc,
   collection,
@@ -9,21 +9,26 @@ import {
 import { dbReview, auth } from "./firebase";
 import { AiOutlineDelete } from "react-icons/ai";
 // import { ToastContainer, toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/dist/ReactToastify.css";
+import { AuthContext } from "../context";
+// import { signInWithPopup } from "firebase/auth";
+// import { provider } from "../secondpage/firebase";
 
 export default function Review() {
-  const [data, setData] = useState({
+  const [datas, setDatas] = useState({
     title: "",
     message: "",
   });
+
   // const [to, setTo] = useState(true);
   const [dbList, setdbList] = useState([]);
   const [check, setCheck] = useState(1);
+  const [isauth, setIsauth] = useContext(AuthContext);
 
   //normal form grabbling
   const getData = (e) => {
     const { name, value } = e.target;
-    setData((prev) => {
+    setDatas((prev) => {
       return {
         ...prev,
         [name]: value,
@@ -39,12 +44,14 @@ export default function Review() {
     e.preventDefault();
     //addDoc is ading doc to firestore based onthe postColection var
     await addDoc(postCollection, {
-      title: data.title,
-      message: data.message,
-      name: auth.currentUser.displayName,
-      id: auth.currentUser.uid,
+      title: datas.title,
+      message: datas.message,
+      ass: {
+        name: auth.currentUser.displayName,
+        ids: auth.currentUser.uid,
+      },
     });
-    setData({
+    setDatas({
       title: "",
       message: "",
     });
@@ -61,11 +68,21 @@ export default function Review() {
     const getData = async () => {
       const postCollection = collection(dbReview, "reviews");
       const data = await getDocs(postCollection);
-      setdbList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+      console.log(data);
+      setdbList(data.docs.map((doc) => ({ ...doc.data(), ids: doc.id })));
       console.log("fetched");
     };
     getData();
   }, [check]);
+
+  // const googleLoginIn = () => {
+  //   signInWithPopup(auth, provider).then(() => {
+  //     localStorage.setItem("auth", true);
+  //     setIsauth(true);
+  //     toast.success("loggedIn successFully");
+  //   });
+  // };
+  // useEffect(() => {}, [isauth]);
 
   return (
     <>
@@ -90,9 +107,8 @@ export default function Review() {
               type="text"
               placeholder="Title"
               name="title"
-              value={data.title}
+              value={datas.title}
               onChange={getData}
-              required
               className="mt-4 rounded-md p-2 w-[340px] md:w-[600px] text-[20px] border-2
               outline-none focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200
              border-solid border-gray-300  bg-mainbl-100"
@@ -100,22 +116,33 @@ export default function Review() {
             <textarea
               name="message"
               placeholder="Message here..."
-              value={data.message}
+              value={datas.message}
               onChange={getData}
-              required
               maxLength={100}
               className="mt-4 rounded-md p-2 w-[340px] md:w-[600px] h-[170px] text-[20px] border-2               
               outline-none focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200
               border-solid border-gray-300  bg-mainbl-100"
             />
             <div>
-              <button
-                className="p-[6px] bg-mainpp-200 rounded-md mt-3 w-[340px] 
+              {isauth ? (
+                <button
+                  className="p-[6px] bg-mainpp-200 rounded-md mt-3 w-[340px] 
              capitalize hover:bg-transparent  hover:border-mainpp-200
              hover:text-white border-2 border-mainpp-200 font-semibold tracking-wide"
-              >
-                submit post
-              </button>
+                >
+                  submit post
+                </button>
+              ) : (
+                <button
+                  // onClick={googleLoginIn}
+                  className="p-[6px] bg-mainpp-200 rounded-md mt-3 w-[340px] 
+            capitalize hover:bg-transparent  hover:border-mainpp-200
+            hover:text-white border-2 border-mainpp-200 font-semibold tracking-wide"
+                >
+                  <a href="#nav">login to write review</a>
+                </button>
+              )}
+
               {/* <ToastContainer
                 position="top-right"
                 autoClose={1000}
@@ -155,21 +182,23 @@ export default function Review() {
                     <h1 className="capitalize text-mainbl-50">
                       By :{" "}
                       <span className="text-mainpp-200 font-bold tracking-[2px]">
-                        {post.name}
+                        {post?.ass?.name}
                       </span>
                     </h1>
                   </div>
                   <div>
-                    <button
-                      onClick={() => {
-                        deletePost(post.id);
-                      }}
-                      title="delete post"
-                      className="p-2 bg-mainpp-200 rounded-md  hover:bg-transparent hover:border-mainpp-200
+                    {post?.ass?.ids === auth?.currentUser?.uid && (
+                      <button
+                        onClick={() => {
+                          deletePost(post?.ids);
+                        }}
+                        title="delete post"
+                        className="p-2 bg-mainpp-200 rounded-md  hover:bg-transparent hover:border-mainpp-200
                       hover:text-white border-2 border-mainpp-200"
-                    >
-                      <AiOutlineDelete className="text-xl" />
-                    </button>
+                      >
+                        <AiOutlineDelete className="text-xl" />
+                      </button>
+                    )}
                   </div>
                 </div>
               </>
