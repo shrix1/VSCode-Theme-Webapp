@@ -16,6 +16,7 @@ const Team = () => {
       <h1
         className="capitalize text-center bg-mainbl-200 md:text-5xl text-mainpp-200 
       font-pop font-bold text-3xl pt-14"
+        id="team"
       >
         meet the team
       </h1>

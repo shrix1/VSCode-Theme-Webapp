@@ -35,7 +35,10 @@ const Form = () => {
 
   return (
     <>
-      <section className="bg-mainbl-200 min-h-[70vh] relative font-pop">
+      <section
+        className="bg-mainbl-200 min-h-[70vh] relative font-pop"
+        id="contact"
+      >
         <div className="flex flex-row">
           <div
             className="absolute top-2 left-[36%] lg:left-[37%] flex text-2xl 

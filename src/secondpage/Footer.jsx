@@ -23,7 +23,7 @@ const Footer = () => {
               themes are dark
             </p>
             <button className=" border-2 p-2 hover:text-mainpp-100  hover:border-mainpp-100 rounded-md">
-              <a href="#home"> back to top</a>
+              <a href="#nav"> back to top</a>
             </button>
           </div>
           <div className="right_content my-8">

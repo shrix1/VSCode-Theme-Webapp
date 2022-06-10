@@ -42,6 +42,7 @@ export default function Review() {
   //getfirestore inoput and the collection name
   const createPost = async (e) => {
     e.preventDefault();
+
     //addDoc is ading doc to firestore based onthe postColection var
     await addDoc(postCollection, {
       title: datas.title,
@@ -80,9 +81,9 @@ export default function Review() {
   //     localStorage.setItem("auth", true);
   //     setIsauth(true);
   //     toast.success("loggedIn successFully");
+  //     // setCheck(check + 1);
   //   });
   // };
-  // useEffect(() => {}, [isauth]);
 
   return (
     <>
@@ -109,6 +110,7 @@ export default function Review() {
               name="title"
               value={datas.title}
               onChange={getData}
+              required
               className="mt-4 rounded-md p-2 w-[340px] md:w-[600px] text-[20px] border-2
               outline-none focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200
              border-solid border-gray-300  bg-mainbl-100"
@@ -119,29 +121,19 @@ export default function Review() {
               value={datas.message}
               onChange={getData}
               maxLength={100}
+              required
               className="mt-4 rounded-md p-2 w-[340px] md:w-[600px] h-[170px] text-[20px] border-2               
               outline-none focus:text-white focus:bg-mainbl-200 focus:border-mainpp-200
               border-solid border-gray-300  bg-mainbl-100"
             />
             <div>
-              {isauth ? (
-                <button
-                  className="p-[6px] bg-mainpp-200 rounded-md mt-3 w-[340px] 
+              <button
+                className="p-[6px] bg-mainpp-200 rounded-md mt-3 w-[340px] 
              capitalize hover:bg-transparent  hover:border-mainpp-200
              hover:text-white border-2 border-mainpp-200 font-semibold tracking-wide"
-                >
-                  submit post
-                </button>
-              ) : (
-                <button
-                  // onClick={googleLoginIn}
-                  className="p-[6px] bg-mainpp-200 rounded-md mt-3 w-[340px] 
-            capitalize hover:bg-transparent  hover:border-mainpp-200
-            hover:text-white border-2 border-mainpp-200 font-semibold tracking-wide"
-                >
-                  <a href="#nav">login to write review</a>
-                </button>
-              )}
+              >
+                submit post
+              </button>
 
               {/* <ToastContainer
                 position="top-right"

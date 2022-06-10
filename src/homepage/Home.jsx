@@ -17,9 +17,15 @@ export default function Home() {
           </div>
           {/* --------------------button-----------------------*/}
           <div className="md:-ml-[190px] -mt-[100px]">
-            <button
-              title="download"
-              className=" w-[220px] h-20 bg-mainbl-50/75 rounded-md transition-all
+            {" "}
+            <a
+              href="https://marketplace.visualstudio.com/items?itemName=Shriprasanna.blue-dark-theme"
+              target="blank"
+              rel="noreferrer"
+            >
+              <button
+                title="download"
+                className=" w-[220px] h-20 bg-mainbl-50/75 rounded-md transition-all
             before:absolute before:-translate-x-7 before:-translate-y-4
             before:border-mainpp-200 before:w-[221px] before:h-20 
             before:z-[0] before:rounded-md before:border-[3px] 
@@ -31,13 +37,9 @@ export default function Home() {
             md:before:-translate-y-[30px] md:hover:before:-translate-x-[49px]
             md:hover:before:-translate-y-[19px] md:hover:before:border-4 
             md:border-[3px] md:ml-12 group "
-            >
-              {/* ------------------add link here--------------*/}
-              <a
-                href="https://marketplace.visualstudio.com/items?itemName=Shriprasanna.blue-dark-theme"
-                target="blank"
-                rel="noreferrer"
               >
+                {/* ------------------add link here--------------*/}
+
                 <span
                   className="text-3xl font-semibold text-mainbl-300 md:text-[40px] hover:text-white
                 transition-color duration-500 group-hover:text-white "
@@ -56,9 +58,8 @@ export default function Home() {
                 >
                   1.2.2
                 </span>
-              </a>
-            </button>
-
+              </button>
+            </a>
             {/*------------------- b0ttom content--------------------- */}
             <div
               className="flex justify-center items-center mt-[15px] 
@@ -85,9 +86,7 @@ export default function Home() {
                 title="positive"
               >
                 reviews :{" "}
-                <span className="text-mainpp-200 md:text-mainpp-200">
-                  positive
-                </span>
+                <span className="text-mainpp-200 md:text-mainpp-200">10+</span>
               </h1>
 
               {/*-------------------- stars/rating -----------------*/}

@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { BiLogIn, BiLogOut } from "react-icons/bi";
 import { signInWithPopup, signOut } from "firebase/auth";
 import { auth, provider } from "../secondpage/firebase";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { AuthContext } from "../context";
 
 export default function Nav() {
   const [isauth, setIsauth] = useState(localStorage.getItem("auth"));
+  const [check, setCheck] = useContext(AuthContext);
 
   //for menu DropDown
   const openDropdown = () => {
@@ -21,6 +23,7 @@ export default function Nav() {
       localStorage.setItem("auth", true);
       setIsauth(true);
       toast.success("loggedIn successFully");
+      // setCheck(check + 1);
     });
   };
 
@@ -81,14 +84,14 @@ export default function Nav() {
             </li>
             <span className="text-mainbl-50">.</span>
             <li>
-              <a href="/" className="text-mainbl-50 hover:text-white">
+              <a href="#contact" className="text-mainbl-50 hover:text-white">
                 Contact
               </a>
             </li>
             <span className="text-mainbl-50">.</span>
             <li>
-              <a href="/" className="text-mainbl-50 hover:text-white">
-                Support
+              <a href="#team" className="text-mainbl-50 hover:text-white">
+                Team
               </a>
             </li>
           </ul>
