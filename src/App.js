@@ -39,7 +39,6 @@ const App = () => {
           <Team />
           <Form />
           <Footer />
-          <div>ehlo</div>
         </>
       )}
     </>
