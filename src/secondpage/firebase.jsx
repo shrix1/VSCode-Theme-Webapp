@@ -2,7 +2,8 @@ import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database"; // for form db
 import { getFirestore } from "firebase/firestore"; // for form db
 import { getAuth, GoogleAuthProvider } from "firebase/auth"; // for auth/google provider
-
+import { getAnalytics } from "firebase/analytics";
+import { logEvent } from "firebase/analytics";
 const firebaseConfig = {
   apiKey: "AIzaSyAwtArPHvmbNAg5BLZ0ycPWglmeWm8jdcE",
   authDomain: "miniproject-db-f36f1.firebaseapp.com",
@@ -14,7 +15,11 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+export const analytics = getAnalytics(app);
 export const db = getDatabase(app); // for form db
 export const dbReview = getFirestore(app); // for form db
 export const auth = getAuth(app); // for auth
 export const provider = new GoogleAuthProvider(); // google auth
+
+logEvent(analytics, "notification_received");
+logEvent(analytics, "user_gotIn");
