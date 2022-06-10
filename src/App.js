@@ -39,8 +39,6 @@ const App = () => {
           <Team />
           <Form />
           <Footer />
-          <div>first</div>
-          <div>second</div>
         </>
       )}
     </>
