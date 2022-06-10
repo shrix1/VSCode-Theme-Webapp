@@ -1,6 +1,5 @@
 import React from "react";
-import {BsArrowUpSquareFill} from "react-icons/bs";
-
+import { BsArrowUpSquareFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -24,8 +23,13 @@ const Footer = () => {
               environment theme downloads you will find always that top 10
               themes are dark
             </p>
-            <button title="Back to Top" className=" bg-black  hover:text-mainpp-100  hover:border-mainpp-100 rounded-md">
-              <a href="#nav"><BsArrowUpSquareFill className="text-4xl text-mainpp-200 hover:text-white"/> </a>
+            <button
+              title="Back to Top"
+              className=" bg-black  hover:text-mainpp-100  hover:border-mainpp-100 rounded-md"
+            >
+              <a href="#nav">
+                <BsArrowUpSquareFill className="text-4xl text-mainpp-200 hover:text-white" />{" "}
+              </a>
             </button>
           </div>
           <div className="right_content my-8">
