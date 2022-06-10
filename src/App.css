@@ -55,13 +55,15 @@
 }
 .kiran {
   width: 100%;
-  height: 400px;
+  height: 700px;
   object-fit: cover;
+  object-position: -140px ;
 }
 .jaya {
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
+  
 }
 .purusoth {
   width: 100%;

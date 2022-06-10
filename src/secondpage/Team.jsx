@@ -4,7 +4,7 @@ import { BsGithub } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 // import { BsLink45Deg } from "react-icons/bs";
 import shri from "../images/shri.jpg";
-import kiran from "../images/kiran.jpg";
+import kiran from "../images/kiran2.jpg";
 import purusoth from "../images/purusoth.jpg";
 import jaya from "../images/jaya.jpg";
 
