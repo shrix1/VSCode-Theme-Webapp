@@ -11,11 +11,18 @@ import "react-toastify/dist/ReactToastify.css";
 export default function Nav() {
   const [isauth, setIsauth] = useState(localStorage.getItem("auth"));
   // const [check, setCheck] = useContext(AuthContext);
+  const [add, setAdd] = useState(false);
 
   //for menu DropDown
   const openDropdown = () => {
     const dropdown = document.getElementById("dropdown");
     dropdown.classList.toggle("hidden");
+    setAdd(true);
+  };
+  const closeDropdown = () => {
+    const dropdown = document.getElementById("dropdown");
+    dropdown.classList.toggle("hidden");
+    setAdd(false);
   };
 
   //user logged in
@@ -57,14 +64,23 @@ export default function Nav() {
           </h1>
 
           {/* ------------button for dropdown --------------------*/}
-
-          <button
-            title="menu"
-            onClick={openDropdown}
-            className="text-3xl text-mainpp-200 hover:text-white md:hidden"
-          >
-            <HiMenuAlt3 />
-          </button>
+          {add ? (
+            <button
+              title="menu"
+              onClick={closeDropdown}
+              className="text-3xl text-mainpp-200 hover:text-white md:hidden"
+            >
+              <AiOutlineClose />
+            </button>
+          ) : (
+            <button
+              title="menu"
+              onClick={openDropdown}
+              className="text-3xl text-mainpp-200 hover:text-white md:hidden"
+            >
+              <HiMenuAlt3 />
+            </button>
+          )}
         </div>
 
         {/* list  and btn*/}

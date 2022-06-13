@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="right_content my-8">
             <h3 className="text-mainpp-100 font-medium py-3">Newsletter</h3>
 
-            <form method="post">
+            <form onSubmit={(e) => e.preventDefault()}>
               <input
                 type="email"
                 name="mail"
@@ -45,7 +45,6 @@ const Footer = () => {
                 required
               />{" "}
               <button
-                onClick={(e) => e.preventDefault()}
                 className="text-[16px] text-mainpp-100 rounded-md flex my-3 border-2 border-mainbl-300
             px-4 py-1 bg-mainbl-300 capitalize hover:bg-mainpp-100 hover:border-mainpp-100 hover:text-mainbl-300
             font-semibold"
