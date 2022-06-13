@@ -1,15 +1,16 @@
 import React, { useState, useContext } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { BiLogIn, BiLogOut } from "react-icons/bi";
+import { AiOutlineClose } from "react-icons/ai";
 import { signInWithPopup, signOut } from "firebase/auth";
 import { auth, provider } from "../secondpage/firebase";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { AuthContext } from "../context";
+// import { AuthContext } from "../context";
 
 export default function Nav() {
   const [isauth, setIsauth] = useState(localStorage.getItem("auth"));
-  const [check, setCheck] = useContext(AuthContext);
+  // const [check, setCheck] = useContext(AuthContext);
 
   //for menu DropDown
   const openDropdown = () => {
@@ -56,6 +57,7 @@ export default function Nav() {
           </h1>
 
           {/* ------------button for dropdown --------------------*/}
+
           <button
             title="menu"
             onClick={openDropdown}

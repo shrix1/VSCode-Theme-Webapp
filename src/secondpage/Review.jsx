@@ -69,7 +69,7 @@ export default function Review() {
     const getData = async () => {
       const postCollection = collection(dbReview, "reviews");
       const data = await getDocs(postCollection);
-      console.log(data);
+      // console.log(data);
       setdbList(data.docs.map((doc) => ({ ...doc.data(), ids: doc.id })));
       console.log("fetched");
     };
