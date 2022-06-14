@@ -13,7 +13,12 @@ export default function Home() {
         >
           {/*------------------- image ----------------------*/}
           <div className="w-[350px] md:w-[1000px] ">
-            <img src={image} alt="themephoto" title="theme" />
+            <a
+              href="https://github.com/shrix1/Black-panther-theme/blob/main/themes/panther-theme.json"
+              target="blank"
+            >
+              <img src={image} alt="themephoto" title="theme" />
+            </a>
           </div>
           {/* --------------------button-----------------------*/}
           <div className="md:-ml-[190px] -mt-[100px]">
@@ -90,7 +95,7 @@ export default function Home() {
               </h1>
 
               {/*-------------------- stars/rating -----------------*/}
-              <div title="rating 4+">
+              <div title="rating 4+" className="pb-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="153.128"

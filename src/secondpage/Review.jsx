@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 import {
   addDoc,
   collection,
@@ -8,11 +8,8 @@ import {
 } from "firebase/firestore";
 import { dbReview, auth } from "./firebase";
 import { AiOutlineDelete } from "react-icons/ai";
-// import { ToastContainer, toast } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
-import { AuthContext } from "../context";
-// import { signInWithPopup } from "firebase/auth";
-// import { provider } from "../secondpage/firebase";
 
 export default function Review() {
   const [datas, setDatas] = useState({
@@ -23,7 +20,7 @@ export default function Review() {
   // const [to, setTo] = useState(true);
   const [dbList, setdbList] = useState([]);
   const [check, setCheck] = useState(1);
-  const [isauth, setIsauth] = useContext(AuthContext);
+  // const [isauth, setIsauth] = useContext(AuthContext);
 
   //normal form grabbling
   const getData = (e) => {

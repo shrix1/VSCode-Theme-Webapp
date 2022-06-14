@@ -61,6 +61,16 @@ export default function Nav() {
             Theme
           </h1>
 
+          <button
+            onClick={googleLoginIn}
+            className="p-1 bg-mainpp-200 rounded-md w-[120px] 
+              border-mainpp-200 border-2 hover:bg-transparent  hover:border-mainpp-200
+              hover:text-white transition-colors duration-300 font-bold tracking-wide md:hidden"
+          >
+            {" "}
+            Login <BiLogIn className="inline ml-3 -mt-[2px] text-2xl" />
+          </button>
+
           {/* ------------button for dropdown --------------------*/}
           {add ? (
             <button
@@ -110,9 +120,8 @@ export default function Nav() {
                 Team
               </a>
             </li>
-          </ul>
+          </ul>{" "}
           {/* --------------------download btn---------------------------- */}
-
           {/* cs for login and out */}
           {!isauth ? (
             <div>

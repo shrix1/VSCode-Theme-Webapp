@@ -21,7 +21,7 @@ const Form = () => {
 
   const submitDb = (ev) => {
     ev.preventDefault();
-    const keyValue = push(child(ref(db), "posts")).key;
+    const keyValue = push(child(ref(db), "posts")).key; //multiple keys
     const updateInDb = {};
     updateInDb["/" + keyValue] = data;
     setData({
