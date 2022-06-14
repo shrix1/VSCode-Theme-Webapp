@@ -61,15 +61,54 @@ export default function Nav() {
             Theme
           </h1>
 
-          <button
-            onClick={googleLoginIn}
-            className="p-1 bg-mainpp-200 rounded-md w-[120px] 
+          {!isauth ? (
+            <div>
+              <button
+                onClick={googleLoginIn}
+                className="p-2 bg-mainpp-200 rounded-md w-[140px] 
               border-mainpp-200 border-2 hover:bg-transparent  hover:border-mainpp-200
-              hover:text-white transition-colors duration-300 font-bold tracking-wide md:hidden"
-          >
-            {" "}
-            Login <BiLogIn className="inline ml-3 -mt-[2px] text-2xl" />
-          </button>
+              hover:text-white transition-colors duration-300 font-bold tracking-wide  md:hidden"
+              >
+                {" "}
+                Login <BiLogIn className="inline ml-3 -mt-[2px] text-2xl" />
+              </button>
+              <ToastContainer
+                toastStyle={{ backgroundColor: "#121212" }}
+                position="top-right"
+                autoClose={1000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+              />
+            </div>
+          ) : (
+            <div>
+              <button
+                onClick={googleLogout}
+                className="p-2 bg-mainpp-200 rounded-md w-[140px] 
+              border-mainpp-200 hover:bg-transparent border-2 hover:border-mainpp-200
+              hover:text-white transition-colors duration-300 font-bold tracking-wide  md:hidden"
+              >
+                Logout <BiLogOut className="inline ml-3 -mt-[2px] text-2xl" />
+              </button>
+              <ToastContainer
+                toastStyle={{ backgroundColor: "#121212" }}
+                position="top-right"
+                autoClose={1000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+              />
+            </div>
+          )}
 
           {/* ------------button for dropdown --------------------*/}
           {add ? (
@@ -93,7 +132,7 @@ export default function Nav() {
 
         {/* list  and btn*/}
         <div
-          className="flex-col hidden   md:z-0 z-[-1] duration-1000 ease-out
+          className="flex-col hidden md:z-0 z-[-1] duration-1000 ease-out
           md:flex md:justify-between md:flex-row md:items-center border-white 
           md:mt-[-10px] transition-transform"
           id="dropdown"
@@ -129,7 +168,7 @@ export default function Nav() {
                 onClick={googleLoginIn}
                 className="p-2 bg-mainpp-200 rounded-md mt-3 w-[140px] ml-[120px] 
               border-mainpp-200 border-2 hover:bg-transparent  hover:border-mainpp-200
-              hover:text-white transition-colors duration-300 font-bold tracking-wide"
+              hover:text-white transition-colors duration-300 font-bold tracking-wide hidden md:inline"
               >
                 {" "}
                 Login <BiLogIn className="inline ml-3 -mt-[2px] text-2xl" />
@@ -153,7 +192,7 @@ export default function Nav() {
                 onClick={googleLogout}
                 className="p-2 bg-mainpp-200 rounded-md mt-3 w-[140px] ml-[120px] 
               border-mainpp-200 hover:bg-transparent border-2 hover:border-mainpp-200
-              hover:text-white transition-colors duration-300 font-bold tracking-wide "
+              hover:text-white transition-colors duration-300 font-bold tracking-wide hidden md:inline"
               >
                 Logout <BiLogOut className="inline ml-3 -mt-[2px] text-2xl" />
               </button>
