@@ -47,6 +47,7 @@ export default function Review() {
         ids: auth.currentUser.uid,
       },
     });
+    document.getElementById("add").textContent = "review added ✔️";
     setDatas({
       title: "",
       message: "",
