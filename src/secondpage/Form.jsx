@@ -29,7 +29,10 @@ const Form = () => {
       email: "",
       message: "",
     });
+    document.getElementById("submit").textContent =
+      "your message recevied successfully";
     return update(ref(db), updateInDb);
+
     //need to use any toaster npms for notified notification
   };
 
@@ -149,6 +152,7 @@ const Form = () => {
                 {/* ----------------------button---------------------------------------- */}
 
                 <button
+                  id="submit"
                   className="text-[18px] w-[100%] md:ml-[300px] md:w-[200px] 
                     mr-0
                     px-6

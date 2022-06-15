@@ -17,10 +17,8 @@ export default function Review() {
     message: "",
   });
 
-  // const [to, setTo] = useState(true);
   const [dbList, setdbList] = useState([]);
   const [check, setCheck] = useState(1);
-  // const [isauth, setIsauth] = useContext(AuthContext);
 
   //normal form grabbling
   const getData = (e) => {
@@ -72,15 +70,6 @@ export default function Review() {
     };
     getData();
   }, [check]);
-
-  // const googleLoginIn = () => {
-  //   signInWithPopup(auth, provider).then(() => {
-  //     localStorage.setItem("auth", true);
-  //     setIsauth(true);
-  //     toast.success("loggedIn successFully");
-  //     // setCheck(check + 1);
-  //   });
-  // };
 
   return (
     <>

@@ -2,7 +2,6 @@ import React from "react";
 import { AiOutlineGithub } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
-// import { BsLink45Deg } from "react-icons/bs";
 import shri from "../images/shri.jpg";
 import kiran from "../images/kiran2.jpg";
 import purusoth from "../images/purusoth.jpg";
@@ -160,11 +159,6 @@ const Team = () => {
                   <AiFillLinkedin />
                 </a>
               </li>
-              {/* <li className="lists">
-                <a className="icons" href="/">
-                  <BsLink45Deg />
-                </a>
-              </li> */}
             </ul>
 
             <div className="details users">
