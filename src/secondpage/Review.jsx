@@ -64,7 +64,6 @@ export default function Review() {
     const getData = async () => {
       const postCollection = collection(dbReview, "reviews");
       const data = await getDocs(postCollection);
-      // console.log(data);
       setdbList(data.docs.map((doc) => ({ ...doc.data(), ids: doc.id })));
       console.log("fetched");
     };
@@ -114,6 +113,7 @@ export default function Review() {
             />
             <div>
               <button
+                id="add"
                 className="p-[6px] bg-mainpp-200 rounded-md mt-3 w-[340px] 
              capitalize hover:bg-transparent  hover:border-mainpp-200
              hover:text-white border-2 border-mainpp-200 font-semibold tracking-wide"

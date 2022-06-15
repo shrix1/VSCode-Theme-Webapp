@@ -29,11 +29,8 @@ const Form = () => {
       email: "",
       message: "",
     });
-    document.getElementById("submit").textContent =
-      "your message recevied successfully";
+    document.getElementById("submit").textContent = "recevied ✔️ ";
     return update(ref(db), updateInDb);
-
-    //need to use any toaster npms for notified notification
   };
 
   return (
