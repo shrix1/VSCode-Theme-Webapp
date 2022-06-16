@@ -10,7 +10,6 @@ import React, { useState, useEffect } from "react";
 import RingLoader from "react-spinners/RingLoader";
 
 // SyncLoader
-
 const App = () => {
   const [loading, setLoading] = useState(false);
 

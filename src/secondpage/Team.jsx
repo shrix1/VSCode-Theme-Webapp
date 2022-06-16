@@ -5,8 +5,8 @@ import { AiFillLinkedin } from "react-icons/ai";
 import shri from "../images/shri.jpg";
 import kiran from "../images/kiran2.jpg";
 import purusoth from "../images/purusoth.jpg";
+import puru from "../images/puru.jpg";
 import jaya from "../images/jaya.jpg";
-
 import "../App.css";
 
 const Team = () => {
@@ -98,7 +98,7 @@ const Team = () => {
         <div className="card-wrapper">
           <div className="card profile-two">
             <div className="card-image profile-img--two">
-              <img src={purusoth} className="purusoth" alt="profile two" />
+              <img src={puru} className="purusoth" alt="profile two" />
             </div>
 
             <ul className="social-icons">
