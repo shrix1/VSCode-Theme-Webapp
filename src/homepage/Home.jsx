@@ -61,7 +61,7 @@ export default function Home() {
                   className="text-mainbl-300 font-extrabold text-[18px] group-hover:text-mainpp-200 
                 transition-color duration-500"
                 >
-                  1.2.2
+                  1.2.4
                 </span>
               </button>
             </a>
