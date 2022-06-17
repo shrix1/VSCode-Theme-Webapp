@@ -76,13 +76,11 @@ export default function Nav() {
                 toastStyle={{ backgroundColor: "#121212" }}
                 position="top-right"
                 autoClose={1000}
-                hideProgressBar={false}
+                hideProgressBar={true}
                 newestOnTop={false}
                 closeOnClick
                 rtl={false}
-                pauseOnFocusLoss
                 draggable
-                pauseOnHover
               />
             </div>
           ) : (
@@ -99,13 +97,11 @@ export default function Nav() {
                 toastStyle={{ backgroundColor: "#121212" }}
                 position="top-right"
                 autoClose={1000}
-                hideProgressBar={false}
+                hideProgressBar={true}
                 newestOnTop={false}
                 closeOnClick
                 rtl={false}
-                pauseOnFocusLoss
                 draggable
-                pauseOnHover
               />
             </div>
           )}
