@@ -23,4 +23,3 @@ export const provider = new GoogleAuthProvider(); // google auth
 
 logEvent(analytics, "notification_received");
 logEvent(analytics, "user_gotIn");
-logEvent(analytics, "location");
