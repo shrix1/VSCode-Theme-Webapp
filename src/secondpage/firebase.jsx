@@ -4,6 +4,7 @@ import { getFirestore } from "firebase/firestore"; // for form db
 import { getAuth, GoogleAuthProvider } from "firebase/auth"; // for auth/google provider
 import { getAnalytics } from "firebase/analytics";
 import { logEvent } from "firebase/analytics";
+
 const firebaseConfig = {
   apiKey: "AIzaSyAwtArPHvmbNAg5BLZ0ycPWglmeWm8jdcE",
   authDomain: "miniproject-db-f36f1.firebaseapp.com",
