@@ -95,7 +95,7 @@ export default function Home() {
               </h1>
 
               {/*-------------------- stars/rating -----------------*/}
-              <div title="rating 4+" className="pb-2">
+              <div title="rating 4+">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="153.128"
