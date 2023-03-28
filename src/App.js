@@ -35,7 +35,8 @@ const App = () => {
           <Home />
           <Howto />
           <Review />
-        {/*<Team />*/}
+          {/*<Team />*/}
+          <Team />
           <Form />
           <Footer />
         </>
